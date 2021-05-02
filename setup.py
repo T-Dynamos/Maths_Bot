@@ -4,7 +4,6 @@
 #python program
 version_info = '1.0(stable)'
 ins ='Restart ? y/n = '
-
 import colorama
 from colorama import Fore, Back ,Style
 colorama.init()
@@ -14,7 +13,7 @@ import time
 import os
 import requests
 def down():
-	downloadUrl = 'https://github.com/T-Dynamos/Maths_Bot/blob/main/setup.py'
+	downloadUrl = 'https://raw.githubusercontent.com/T-Dynamos/Maths_Bot/main/setup.py '
 	req = requests.get(downloadUrl)
 	filename = req.url[downloadUrl.rfind('/')+1:]
 	with open(filename, 'wb') as f:
@@ -26,9 +25,9 @@ def update():
 	x=input("Do You want to update y/n ==> ")
 	if x=='y':
 		print()
-		
 		print("Downloading...")
 		down()
+	
 		time.sleep(1)
 		print()
 		print("Installing...")
