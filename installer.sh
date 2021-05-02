@@ -1,3 +1,4 @@
+clear
 figlet   INSTALLING... | lolcat
 cyan='\e[0;36m'
 lightgreen='\e[1;32m'
@@ -8,7 +9,8 @@ echo -e $lightgreen "\e[32m Wait Patiently..."
 pkg upgrade
 pip install random
 pip install colorama
-pip install maths
-echo -e  ==========================
-echo -e     Run python setup.py 
-echo -e  ==========================
+clear
+python setup.py
+
+
+
