@@ -1,0 +1,5 @@
+colorama
+time
+math
+os
+requests
