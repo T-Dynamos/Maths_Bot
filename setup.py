@@ -2,7 +2,7 @@
 #pylint:disable=E0001
 #pylint:disable=W0312
 #python program
-version_info = '1.0(stable)'
+version_info = '1.0'
 ins ='Restart ? y/n = '
 import colorama
 from colorama import Fore, Back ,Style
