@@ -59,7 +59,6 @@ def r1():
 	print(h1)
 	print("Worng Option Idiot")
 	print(h1)
-	india()
 	restart()
 def restart():
 	r=input(ins)
@@ -69,7 +68,6 @@ def restart():
 	else:
 		print(h1)
 		print("Sub On YouTube = " , sub)
-		india()
 print(Fore.BLUE + Style.BRIGHT + "                     ===============================================")
 print(Fore.YELLOW + "                     〘Coder =ㅤAnsh Dadwalㅤ||ㅤTeam = T-Dynamos  〙 ")
 h="==============================================="
