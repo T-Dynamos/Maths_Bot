@@ -2,7 +2,7 @@
 #pylint:disable=E0001
 #pylint:disable=W0312
 #python program
-version_info = '1.0'
+version_info = '1.0(stable)'
 ins ='Restart ? y/n = '
 import colorama
 from colorama import Fore, Back ,Style
@@ -12,6 +12,15 @@ import math
 import time
 import os
 import requests
+os.system('clear')
+def india():
+	h3 = (Fore.CYAN + "╠═════════════════════════")
+	print(h3)
+	m=  Fore.LIGHTRED_EX+'MADE '
+	i= Fore.WHITE + 'IN'
+	ind=Fore.GREEN + 'INDIA'
+	print("  ",m ,"" ,i, "",ind)
+	print(h3)
 def down():
 	downloadUrl = 'https://raw.githubusercontent.com/T-Dynamos/Maths_Bot/main/setup.py'
 	req = requests.get(downloadUrl)
@@ -26,7 +35,6 @@ def update():
 	if x=='y':
 		print()
 		os.system('rm -rf setup.py')
-		os.remove('setup.py')
 		print("Downloading...")
 		down()
 		time.sleep(1)
@@ -50,6 +58,7 @@ def r1():
 	print(h1)
 	print("Worng Option Idiot")
 	print(h1)
+	india()
 	restart()
 def restart():
 	r=input(ins)
@@ -58,30 +67,33 @@ def restart():
 	else:
 		print(h1)
 		print("Sub On YouTube = " , sub)
-print(Fore.BLUE + Style.BRIGHT + "                     ==========================================")
-print(Fore.YELLOW + "                     Coder =ㅤAnsh Dadwalㅤ||ㅤTeam = T-Dynamos")
-h="=========================================="
-h1="~~~~~~~~~~~~~~~~~"
+		india()
+print(Fore.BLUE + Style.BRIGHT + "                     ===============================================")
+print(Fore.YELLOW + "                     〘Coder =ㅤAnsh Dadwalㅤ||ㅤTeam = T-Dynamos  〙 ")
+h="==============================================="
+h1= "══════════════════════════════"
 print(Fore.BLUE +"                    ", h)
 sub="https://youtube.com/channel/UCCGprYqpszbeAYMGbjlh-aA"
 colorama.init(autoreset=False)
 time.sleep(0.25)
 print(Fore.RED)
-print( Fore.LIGHTGREEN_EX + "                 __________")
+print( Fore.LIGHTGREEN_EX + "         __________")
 #Ansh Dadwal is great and this company is owned by Ansh Dadwal 
-print("                |----------|","::::::::::::::::::::::::::::::::::::::::::::::::::::")
-print("                ||12345678||","##::::'##::::'###::::'########:'##::::'##::'######::   ")
-print("                |----------|","###::'###:::'## ##:::... ##..:: ##:::: ##:'##... ##:")      
-print("                |          |","####'####::'##:. ##::::: ##:::: ##:::: ##: ##:::..:: ")
-print("                |[M|#|C][-]|","## ### ##:'##:::. ##:::: ##:::: #########:. ######::")
-print("                |[7|8|9][+]|","##. #: ##: #########:::: ##:::: ##.... ##::..... ##: ")
-print("                |[4|5|6][x]|","##:.:: ##: ##.... ##:::: ##:::: ##:::: ##:'##::: ##:")
-print("                |[1|2|3][%]|","##:::: ##: ##:::: ##:::: ##:::: ##:::: ##:. ######::")
-print("                |[.|O|:][=]|","..:::::..::..:::::..:::::..:::::..:::::..:::......::")
-print("                +__________+")
+print("        |----------|","::::::::::::::::::::::::::::::::::::::::::::::::::::")
+print("        ||12345678||","##::::'##::::'###::::'########:'##::::'##::'######::   ")
+print("        |----------|","###::'###:::'## ##:::... ##..:: ##:::: ##:'##... ##:")      
+print("        |          |","####'####::'##:. ##::::: ##:::: ##:::: ##: ##:::..:: ")
+print("        |[M|#|C][-]|","## ### ##:'##:::. ##:::: ##:::: #########:. ######::")
+print("        |[7|8|9][+]|","##. #: ##: #########:::: ##:::: ##.... ##::..... ##: ")
+print("        |[4|5|6][x]|","##:.:: ##: ##.... ##:::: ##:::: ##:::: ##:'##::: ##:")
+print("        |[1|2|3][%]|","##:::: ##: ##:::: ##:::: ##:::: ##:::: ##:. ######::")
+print("        |[.|O|:][=]|","..:::::..::..:::::..:::::..:::::..:::::..:::......::")
+print("        +__________+")
+print()
+india()
 print()
 print("=================================")
-print("   ©Copyright  = @T-Dynamos_Mod")
+print("   ©Copyright  = @T-Dynamos_Mod","          ")
 print("=================================")
 print()
 print(Fore.MAGENTA+ Back.GREEN + "Version = " , version_info)
@@ -98,6 +110,9 @@ def main():
 	print("2. Area")
 	print("3. Volume")
 	print("4. Heron's Formula")
+	print()
+	print(h1)
+	print()
 	print("5. Update Program")
 	print()
 	print(h1)
@@ -196,6 +211,56 @@ def main():
 					restart()
 				else:
 					r1()
+		if c=='3':
+			print(h1)
+			print("1.Area of Square")
+			print("2.Area of Rectangle")
+			print("3.Area of Circle")
+			print("4.Area of Parallelogram")
+			print("5.Area of Triangle")
+			print("6.Area of Trapizium")
+			print(h1)
+			x=input(" ==> ")
+			print(h1)
+			if x=='1':
+				yt=int(input("Side"))
+				print("Area = ",yt*yt)
+				print(h1)
+				restar()
+			if x=='2':
+				print(h1)
+				yt=int(input("Length = "))
+				ty=int(input("Breadth = "))
+				print("Area = ",yt*ty)
+				print(h1)
+				restart()
+			if x=='3':
+				print(h1)
+				r=int(input("Radius = "))
+				print("Area = ",pi*r*r)
+				print(h1)
+				restar()
+			if x=='4':
+				print(h1)
+				h=int(input("Height = "))
+				b=int(input("Base = "))
+				print("Area = ",b*h)
+				print(h1)
+				restar()
+			if x=='5':
+				print(h1)
+				h=int(input("Height = "))
+				b=int(input("Base = "))
+				print("Area = ", 1/2*b*h)
+				print(h1)
+				restart()
+			if x=='6':
+				p1=int(input("Parallel Side 1 = "))
+				p2=int(input("Parallel Side 2 = "))
+				h=int(input("Height = "))
+				print("Area = ", 1/2 * p1+p2 * h)
+				print(h1)
+				restart()
 		if c=='2':
 				print(h1)
 				print("1.TSA OF CUBOID")
