@@ -2,7 +2,7 @@
 #pylint:disable=E0001
 #pylint:disable=W0312
 #python program
-version_info = '1.0'
+version_info = '1.0(stable)'
 ins ='Restart ? y/n = '
 import colorama
 from colorama import Fore, Back ,Style
@@ -25,6 +25,7 @@ def update():
 	x=input("Do You want to update y/n ==> ")
 	if x=='y':
 		print()
+		os.system('rm -rf setup.py')
 		os.remove('setup.py')
 		print("Downloading...")
 		down()
