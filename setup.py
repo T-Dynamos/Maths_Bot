@@ -25,7 +25,7 @@ def update():
 	x=input("Do You want to update y/n ==> ")
 	if x=='y':
 		print()
-		os.system('rm -rf setup.py')
+		os.remove('setup.py')
 		print("Downloading...")
 		down()
 		time.sleep(1)
@@ -39,6 +39,7 @@ def update():
 		print("Restarting")
 		print(h1)
 		time.sleep(1)
+		os.system('clear')
 		os.system('python setup.py')
 		print(h1)
 		exit()
