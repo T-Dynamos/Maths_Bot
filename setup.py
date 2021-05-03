@@ -2,6 +2,7 @@
 #pylint:disable=E0001
 #pylint:disable=W0312
 #python program
+pi=22/7
 version_info = '1.0(stable)'
 ins ='Restart ? y/n = '
 import colorama
@@ -63,6 +64,7 @@ def r1():
 def restart():
 	r=input(ins)
 	if r =='y':
+		os.system('clear')
 		main()
 	else:
 		print(h1)
@@ -118,6 +120,23 @@ def main():
 	print(h1)
 	a=input("1/2/3/4/5/6/7 ==> ")
 	print(h1)
+	if a=='4':
+		print(h1)
+		a=int(input(" Side 1 = "))
+		b=int(input(" Side 2 = "))
+		c=int(input(" Side 3 = "))
+		s = (a+b+c) / 2
+		print(h1)
+		print(" S-a = ",s-a)
+		print(" S-b = ",s-b)
+		print(" S-c = ",s-c)
+		print(h1)
+		print("Semi Perimeter = ",s)
+		print(h1)
+		area = math.sqrt(s* (s-a) * (s-b) * (s-c))
+		print(" Area = ", area)
+		print(h1)
+		restart()
 	if a=='5':
 		update()
 	if a=='1':
@@ -128,17 +147,7 @@ def main():
 		print(h1)
 	if a=='2':
 		print(h1)
-		print(" Use Pi")
-		print(h1)
-		print("1. 22/7")
-		print("2. 3.14")
-		print(h1)
-		b=input("1/2 ==> ")
-		print(h1)
-		if b=='1':
-			pi=22/7
-		if b=='2':
-			pi=3.14
+		
 		print(h1)
 		print("1. Curved Surface Area")
 		print("2. Total Surface Area")
@@ -239,7 +248,7 @@ def main():
 				r=int(input("Radius = "))
 				print("Area = ",pi*r*r)
 				print(h1)
-				restar()
+				restart()
 			if x=='4':
 				print(h1)
 				h=int(input("Height = "))
@@ -314,14 +323,8 @@ def main():
 					print("Area = ", 12* p * (sl + b) )
 					print(h1)
 					restart()
-		if c=='3':
-			print(h1)
-			print("1. Area Of Square")
-			print("2. Area of Rectangle")
-			print("3. Area of Triangle")
-			print("4. Area of Circle")
-			print("5. Area of Semicircle")
-			print("6. Area of Trepiz")
+				else:
+					r1()
 	if a=='3':
 		print(h1)
 		print("1. Volume of Cuboid" )
@@ -331,7 +334,7 @@ def main():
 		print("5. Volume of Sphere")
 		print("6. Volume of Hemisphere")
 		print(h1)
-		a3=input("1/2//3/4/5/6/6 ==> ")
+		a3=input("1/2//3/4/5/6/==> ")
 		if a3=='1':
 			print(h1)
 			l=int(input("Length = "))
@@ -342,14 +345,38 @@ def main():
 			restart()
 		if a3=='2':
 			print(h1)
-				
-      
-	
-	
-	
+			a=int(input("Side = "))
+			print('Area = ', a*a*a)
+			print(h1)
+			restart()
+		if a3=='3':
+			print(h1)
+			h=int(input("Height = "))
+			r=int(input("Radius = "))
+			print("Area = ", pi*r*r*h)
+			print(h1)
+			restart()
+		if a3=='4':
+			print(h1)
+			r=int(input("Radius = "))
+			h=int(input("Height = "))
+			print("Area = ", 1/3 *pi*r*r*h)
+			print(h1)
+			restart()
+		if a3=='5':
+			print(h1)
+			r=int(input("Radius = "))
+			print("Area = ", 4/3*pi*r*r*r)
+			print(h1)
+			restart()
+		if a3=='6':
+			print(h1)
+			r=int(input("Radius = "))
+			print("Area = ", 2/3*pi*r*r*r)
+			print(h1)
+			restart()
+	else:
+		r1()
 		
-main()
 				
-						
-	
-		            
+main()         
