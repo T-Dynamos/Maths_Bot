@@ -2,7 +2,7 @@
 #pylint:disable=E0001
 #pylint:disable=W0312
 #python program
-version_info = '1.0'
+version_info = '1.0(stable)'
 ins ='Restart ? y/n = '
 import colorama
 from colorama import Fore, Back ,Style
@@ -13,7 +13,7 @@ import time
 import os
 import requests
 def down():
-	downloadUrl = 'https://raw.githubusercontent.com/T-Dynamos/Maths_Bot/main/setup.py '
+	downloadUrl = 'https://raw.githubusercontent.com/T-Dynamos/Maths_Bot/main/setup.py'
 	req = requests.get(downloadUrl)
 	filename = req.url[downloadUrl.rfind('/')+1:]
 	with open(filename, 'wb') as f:
@@ -25,8 +25,7 @@ def update():
 	x=input("Do You want to update y/n ==> ")
 	if x=='y':
 		print()
-		os.remove('setup.py')
-
+		os.system('rm -rf setup.py')
 		print("Downloading...")
 		down()
 		time.sleep(1)
@@ -37,7 +36,10 @@ def update():
 		print("Installation Successful")
 		time.sleep(2)
 		print(h1)
-		print("Restart it")
+		print("Restarting")
+		print(h1)
+		time.sleep(1)
+		os.system('python setup.py')
 		print(h1)
 		exit()
 	else:
