@@ -1,4 +1,6 @@
 clear
+pkg install figlet
+pkg install lolcat
 figlet   INSTALLING... | lolcat
 cyan='\e[0;36m'
 lightgreen='\e[1;32m'
