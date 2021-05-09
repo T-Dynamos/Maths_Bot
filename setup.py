@@ -1,4 +1,26 @@
-#Ansh Dadwal is great and this company is owned by Ansh Dadwal 
+"""
+The MIT License (MIT)
+
+Copyright (c) 2021 @T-Dynamos
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+"""
 #pylint:disable=E0001
 #pylint:disable=W0312
 #python program
@@ -13,6 +35,7 @@ import math
 import time
 import os
 import requests
+from tables import table_ex
 os.system('clear')
 def india():
 	h3 = (Fore.CYAN + "╠═════════════════════════")
@@ -68,6 +91,8 @@ def restart():
 	else:
 		print(h1)
 		print("Sub On YouTube = " , sub)
+		print(h1)
+		exit()
 print(Fore.BLUE + Style.BRIGHT + "                     ===============================================")
 print(Fore.YELLOW + "                     〘Coder =ㅤAnsh Dadwalㅤ||ㅤTeam = T-Dynamos  〙 ")
 h="==============================================="
@@ -110,13 +135,14 @@ def main():
 	print("2. Area")
 	print("3. Volume")
 	print("4. Heron's Formula")
+	print("5. Tables")
 	print()
 	print(h1)
 	print()
-	print("5. Update Program")
+	print("6. Update Program")
 	print()
 	print(h1)
-	a=input("1/2/3/4/5/6/7 ==> ")
+	a=input("1/2/3/4/5/6 ==> ")
 	print(h1)
 	if a=='4':
 		print(h1)
@@ -136,6 +162,17 @@ def main():
 		print(h1)
 		restart()
 	if a=='5':
+		print(h1)
+		a=(input("Enter a Number = "))
+		print(h1)
+		b=(input("To which extent = "))
+		print(h1)
+		print("Table of ",a)
+		print(h1)
+		table_ex(a,b)
+		print(h1)
+		restart()
+	if a=='6':
 		update()
 	if a=='1':
 		print(h1)
@@ -373,6 +410,8 @@ def main():
 			print("Area = ", 2/3*pi*r*r*r)
 			print(h1)
 			restart()
+		else:
+			r1()
 	else:
 		r1()
 		
