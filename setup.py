@@ -25,7 +25,7 @@ THE SOFTWARE.
 #pylint:disable=W0312
 #python program
 pi=22/7
-version_info = '1.0(Alpha)'
+version_info = '2.0(stable)
 ins ='Restart ? y/n = '
 import colorama
 from colorama import Fore, Back ,Style
