@@ -58,7 +58,7 @@ def update():
 	x=input("Do You want to update y/n ==> ")
 	if x=='y':
 		print()
-		os.system('rm -rf setup.py')
+		os.remove('setup.py')
 		print("Downloading...")
 		down()
 		time.sleep(1)
