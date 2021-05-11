@@ -31,11 +31,28 @@ import os
 import requests
 from tables import table_ex
 os.system('clear')
-version_info = '3.0 (latset)'
+version_info = '3.0 (Beta)'
 ins ='Restart ? y/n = '
 pi=22/7
 def pivalue():
-	
+	print(h1)
+	print("1. 22/7 ")
+	print("2. 3.14 ")
+	print(h1)
+	ol=input(" == > ")
+	print(h1)
+	if ol == '1':
+		pi == (22/7)
+	elif ol =='2':
+		pi== (3.14)
+	else:
+		print(h1)
+		print(" Default = 22/7")
+		print(h1)
+		pi=22/7
+	print(h1)
+	print("Assigned Successful !")
+	print(h1)
 def india():
 	h3 = (Fore.CYAN + "╠═════════════════════════")
 	print(h3)
@@ -213,7 +230,6 @@ def main():
 		c=input("1/2 ==> ")
 		print(h1)
 		if c=='1':
-				pivalue()
 				print("")
 				print(h1)
 				print("1. LSA of Cuboid")
@@ -279,7 +295,6 @@ def main():
 				else:
 					r1()
 		if c=='3':
-			pivalue()
 			print(h1)
 			print("1.Area of Square")
 			print("2.Area of Rectangle")
@@ -330,7 +345,6 @@ def main():
 				print(h1)
 				restart()
 		if c=='2':
-				pivalue()
 				print(h1)
 				print("1.TSA OF CUBOID")
 				print("2.TSA OF CUBE")
@@ -386,7 +400,6 @@ def main():
 				else:
 					r1()
 	if a=='3':
-		pivalue()
 		print(h1)
 		print("1. Volume of Cuboid" )
 		print("2. Volume of Cube")
