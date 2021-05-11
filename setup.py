@@ -21,12 +21,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
-#pylint:disable=E0001
-#pylint:disable=W0312
-#python program
-pi=22/7
-version_info = '2.0(stable)'
-ins ='Restart ? y/n = '
 import colorama
 from colorama import Fore, Back ,Style
 colorama.init()
@@ -37,6 +31,28 @@ import os
 import requests
 from tables import table_ex
 os.system('clear')
+version_info = '3.0 (latset)'
+ins ='Restart ? y/n = '
+pi=22/7
+def pivalue():
+	print(h1)
+	print("1. 22/7 ")
+	print("2. 3.14 ")
+	print(h1)
+	ol=input(" == > ")
+	print(h1)
+	if ol == '1':
+		pi == (22/7)
+	elif ol =='2':
+		pi== (3.14)
+	else:
+		print(h1)
+		print(" Default = 22/7")
+		print(h1)
+		pi=22/7
+	print(h1)
+	print("Assigned Successful !")
+	print(h1)
 def india():
 	h3 = (Fore.CYAN + "╠═════════════════════════")
 	print(h3)
@@ -117,15 +133,22 @@ print("        +__________+")
 print()
 india()
 print()
-print("=================================")
-print("   ©Copyright  = @T-Dynamos_Mod","          ")
-print("=================================")
+h4 = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+print(h4)
+print("©  Copyright  = @ T-Dynamos_Mod","          ")
+print(h4)
 print()
 print(Fore.MAGENTA+ Back.GREEN + "Version = " , version_info)
 time.sleep(1)
 print()
 print(Fore.LIGHTCYAN_EX+ Back.BLACK )
 print()
+def sqrt123():
+	print(h1)
+	f=int(input("Enter The Number = "))
+	print("Square Root =  ",math.sqrt(f))
+	print(h1)
+	restart()
 def main():
 	print(h1)
 	print("Choose Any Option")
@@ -136,14 +159,30 @@ def main():
 	print("3. Volume")
 	print("4. Heron's Formula")
 	print("5. Tables")
+	print("6. Square and Square Root")
 	print()
 	print(h1)
 	print()
-	print("6. Update Program")
+	print("[a] Update Program")
 	print()
 	print(h1)
-	a=input("1/2/3/4/5/6 ==> ")
+	a=input("1/2/3/4/5/6/a ==> ")
 	print(h1)
+	if a=='6':
+		print(h1)
+		print("1. Square Root")
+		print("2. Raised To Power ")
+		print(h1)
+		op=input("==> ")
+		if op=='1':
+			sqrt123()		
+		if op =='2':
+			print(h1)
+			f=int(input("Enter A Number = "))
+			k=int(input("Raised To Power = "))
+			print("==> ",f**k)
+			print(h1)
+			restart()
 	if a=='4':
 		print(h1)
 		a=int(input(" Side 1 = "))
@@ -172,7 +211,7 @@ def main():
 		table_ex(a,b)
 		print(h1)
 		restart()
-	if a=='6':
+	if a=='a':
 		update()
 	if a=='1':
 		print(h1)
@@ -191,6 +230,7 @@ def main():
 		c=input("1/2 ==> ")
 		print(h1)
 		if c=='1':
+				pivalue()
 				print("")
 				print(h1)
 				print("1. LSA of Cuboid")
@@ -256,6 +296,7 @@ def main():
 				else:
 					r1()
 		if c=='3':
+			pivalue()
 			print(h1)
 			print("1.Area of Square")
 			print("2.Area of Rectangle")
@@ -306,6 +347,7 @@ def main():
 				print(h1)
 				restart()
 		if c=='2':
+				pivalue()
 				print(h1)
 				print("1.TSA OF CUBOID")
 				print("2.TSA OF CUBE")
@@ -361,6 +403,7 @@ def main():
 				else:
 					r1()
 	if a=='3':
+		pivalue()
 		print(h1)
 		print("1. Volume of Cuboid" )
 		print("2. Volume of Cube")
