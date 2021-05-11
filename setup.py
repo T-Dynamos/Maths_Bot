@@ -35,24 +35,7 @@ version_info = '3.0 (latset)'
 ins ='Restart ? y/n = '
 pi=22/7
 def pivalue():
-	print(h1)
-	print("1. 22/7 ")
-	print("2. 3.14 ")
-	print(h1)
-	ol=input(" == > ")
-	print(h1)
-	if ol == '1':
-		pi == (22/7)
-	elif ol =='2':
-		pi== (3.14)
-	else:
-		print(h1)
-		print(" Default = 22/7")
-		print(h1)
-		pi=22/7
-	print(h1)
-	print("Assigned Successful !")
-	print(h1)
+	
 def india():
 	h3 = (Fore.CYAN + "╠═════════════════════════")
 	print(h3)
