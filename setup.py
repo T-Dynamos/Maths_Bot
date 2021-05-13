@@ -34,6 +34,9 @@ os.system('clear')
 version_info = '3.0 (Beta)'
 ins ='Restart ? y/n = '
 pi=22/7
+def logo7():
+	import os
+	os.system('toilet -f pagga "Maths" | lolcat')
 def pivalue():
 	print(h1)
 	print("1. 22/7 ")
@@ -103,6 +106,7 @@ def restart():
 	r=input(ins)
 	if r =='y':
 		os.system('clear')
+		logo7()
 		main()
 	else:
 		print(h1)
