@@ -1,19 +1,17 @@
-
-pkg install figlet
 clear
-figlet   INSTALLING... 
-cyan='\e[0;36m'
-lightgreen='\e[1;32m'
-red='\e[1;31m'
-yellow='\e[1;33m'
-echo -e $lightgreen "\e[32m Maths bot Setup Wizard"
-echo -e $lightgreen "\e[32m Wait Patiently..."
-pkg upgrade
-pip install requests
+apt update
+apt upgrade 
+apt install figlet -y
+apt install toilet -y
+apt install nano -y
+apt install ruby -y
+apt install curl -y
+gem install lolcat
+clear
+toilet -f pagga "Installing" | lolcat
 pip install colorama
+pip install requests
 pip install table-ex
-clear
+cd m_bot
+toilet -f pagga "Success..!!" | lolcat
 python setup.py
-
-
-
