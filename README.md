@@ -5,7 +5,7 @@ Hacking is a Crime!!! This Tool Only Use For Educational Perpose Don't Work Any 
 
 ## Installation
 First Time = 
-* Download Termux = https://f-droid.org/repo/com.termux_112.apk
+* Download Termux = [DOWNLOAD]https://f-droid.org/repo/com.termux_112.apk
 ```
 termux-setup-storage
 pkg upgrade
