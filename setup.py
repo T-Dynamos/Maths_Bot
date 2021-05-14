@@ -35,8 +35,11 @@ version_info = '3.0'
 ins ='Restart ? y/n = '
 pi=22/7
 def logo7():
+ 
 	import os
 	os.system('toilet -f pagga "Maths" | lolcat')
+	print(Fore.LIGHTCYAN_EX + Back.BLACK)
+	colorama.init()
 def pivalue():
 	print(h1)
 	print("1. 22/7 ")
@@ -64,6 +67,8 @@ def india():
 	ind=Fore.GREEN + 'INDIA'
 	print("  ",m ,"" ,i, "",ind)
 	print(h3)
+def clear():
+	os.system('clear')
 def down():
 	downloadUrl = 'https://raw.githubusercontent.com/T-Dynamos/Maths_Bot/main/setup.py'
 	req = requests.get(downloadUrl)
@@ -115,40 +120,30 @@ def restart():
 		print("Sub On YouTube = " , sub)
 		print(h1)
 		exit()
-print(Fore.BLUE + Style.BRIGHT + "                     ===============================================")
-print(Fore.YELLOW + "                     〘Coder =ㅤAnsh Dadwalㅤ||ㅤTeam = T-Dynamos  〙 ")
-h="==============================================="
+print(Fore.BLUE + Style.BRIGHT + "    =============================================")
+print(Fore.YELLOW + "    〘 Coder = Ansh Dadwalㅤ|| Team = T-Dynamos 〙 ")
+h="============================================="
 h1= "══════════════════════════════"
-print(Fore.BLUE +"                    ", h)
+print(Fore.BLUE +"   ", h)
 sub="https://youtube.com/channel/UCCGprYqpszbeAYMGbjlh-aA"
 colorama.init(autoreset=False)
 time.sleep(0.25)
 print(Fore.RED)
-print( Fore.LIGHTGREEN_EX + "         __________")
+
 #Ansh Dadwal is great and this company is owned by Ansh Dadwal 
-print("        |----------|","::::::::::::::::::::::::::::::::::::::::::::::::::::")
-print("        ||12345678||","##::::'##::::'###::::'########:'##::::'##::'######::   ")
-print("        |----------|","###::'###:::'## ##:::... ##..:: ##:::: ##:'##... ##:")      
-print("        |          |","####'####::'##:. ##::::: ##:::: ##:::: ##: ##:::..:: ")
-print("        |[M|#|C][-]|","## ### ##:'##:::. ##:::: ##:::: #########:. ######::")
-print("        |[7|8|9][+]|","##. #: ##: #########:::: ##:::: ##.... ##::..... ##: ")
-print("        |[4|5|6][x]|","##:.:: ##: ##.... ##:::: ##:::: ##:::: ##:'##::: ##:")
-print("        |[1|2|3][%]|","##:::: ##: ##:::: ##:::: ##:::: ##:::: ##:. ######::")
-print("        |[.|O|:][=]|","..:::::..::..:::::..:::::..:::::..:::::..:::......::")
-print("        +__________+")
-print()
+logo7()
+print(Fore.LIGHTCYAN_EX + Back.BLACK)
 india()
 print()
 h4 = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-print(h4)
+print(h1)
 print("©  Copyright  = @ T-Dynamos_Mod","          ")
-print(h4)
+print(h1)
 print()
 print(Fore.MAGENTA+ Back.GREEN + "Version = " , version_info)
 time.sleep(1)
 print()
-print(Fore.LIGHTCYAN_EX+ Back.BLACK )
-print()
+print(Fore.LIGHTCYAN_EX  + Back.BLACK)
 def sqrt123():
 	print(h1)
 	f=int(input("Enter The Number = "))
@@ -176,6 +171,8 @@ def main():
 	a=input("1/2/3/4/5/6/a ==> ")
 	print(h1)
 	if a=='7':
+		clear()
+		logo7()
 		print(h1)
 		print("1. Kelvin To Celsius [ °K---> °C ]")
 		print("1. Celsius To Kelvin [ °C---> °K ]")
@@ -184,6 +181,8 @@ def main():
 		print(h1)
 		hji=input("==> ")
 	if a=='6':
+		os.system('clear')
+		logo7()
 		print(h1)
 		print("1. Square Root")
 		print("2. Raised To Power ")
@@ -199,6 +198,8 @@ def main():
 			print(h1)
 			restart()
 	if a=='4':
+		clear()
+		logo7()
 		print(h1)
 		a=int(input(" Side 1 = "))
 		b=int(input(" Side 2 = "))
@@ -216,6 +217,8 @@ def main():
 		print(h1)
 		restart()
 	if a=='5':
+		clear()
+		logo7()
 		print(h1)
 		a=(input("Enter a Number = "))
 		print(h1)
@@ -235,8 +238,9 @@ def main():
 		restart()
 		print(h1)
 	if a=='2':
+		clear()
+		logo7()
 		print(h1)
-		
 		print(h1)
 		print("1. Curved Surface Area")
 		print("2. Total Surface Area")
@@ -245,6 +249,8 @@ def main():
 		c=input("1/2 ==> ")
 		print(h1)
 		if c=='1':
+				clear()
+				logo7()
 				print("")
 				print(h1)
 				print("1. LSA of Cuboid")
@@ -310,6 +316,8 @@ def main():
 				else:
 					r1()
 		if c=='3':
+			clear()
+			logo7()
 			print(h1)
 			print("1.Area of Square")
 			print("2.Area of Rectangle")
@@ -360,6 +368,8 @@ def main():
 				print(h1)
 				restart()
 		if c=='2':
+				clear()
+				logo7()
 				print(h1)
 				print("1.TSA OF CUBOID")
 				print("2.TSA OF CUBE")
@@ -415,6 +425,8 @@ def main():
 				else:
 					r1()
 	if a=='3':
+		clear()
+		logo7()
 		print(h1)
 		print("1. Volume of Cuboid" )
 		print("2. Volume of Cube")
@@ -467,7 +479,5 @@ def main():
 		else:
 			r1()
 	else:
-		r1()
-		
-				
+		r1()				
 main()         
