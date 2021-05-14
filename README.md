@@ -1,9 +1,10 @@
 # Maths_Bot
 Maths Bot with many different types of features like auto-updation and many other formulas for all life
 # Disclamer
-Hacking is a Crime!!! This Tool Only Use For Educational Perpose Don't Work Any illegal Activities Using Bull Attack...
+Don't Use ot Your Online Exam !! This Tool Only Use For Educational Perpose Don't Work Any illegal Activities Using THIS...
 
 ## Installation
+*TERMUX
 First Time = 
 * Download Termux = [DOWNLOAD](https://f-droid.org/repo/com.termux_112.apk)
 ```
@@ -22,7 +23,19 @@ cd m_bot
 python setup.py
 
 ```
+*WINDOWS
+```
+clear
+echo -e INSTALLING
+python -m pip install requests
+python -m pip install table-ex
+python -m pip install colorama
+sudo dnf install git-all
+git clone https://github.com/T-Dynamos/Maths_Bot
+python setup.py
+```
+Or Download wininstall.bat = [Download](
 ## Author
-Written and maintained by T-Dynamos (https://github.com/T-Dynamos)
+Written and maintained by [T-Dynamos](https://github.com/T-Dynamos)
 ## License
 Project license can be found [here](https://github.com/T-Dynamos/Maths_Bot/blob/master/LICENSE)
