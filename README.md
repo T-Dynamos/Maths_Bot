@@ -34,7 +34,7 @@ sudo dnf install git-all
 git clone https://github.com/T-Dynamos/Maths_Bot
 python setup.py
 ```
-Or Download wininstall.bat = [Download](
+Or Download wininstall.bat = [Download](https://raw.githubusercontent.com/T-Dynamos/Maths_Bot/main/wininstall.bat)
 ## Author
 Written and maintained by [T-Dynamos](https://github.com/T-Dynamos)
 ## License
