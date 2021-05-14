@@ -31,7 +31,7 @@ import os
 import requests
 from tables import table_ex
 os.system('clear')
-version_info = '3.0 (Beta)'
+version_info = '3.0'
 ins ='Restart ? y/n = '
 pi=22/7
 def logo7():
