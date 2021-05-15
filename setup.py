@@ -21,6 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
+#By Ansh Dadwal
 import colorama
 from colorama import Fore, Back ,Style
 colorama.init()
@@ -91,7 +92,7 @@ def update():
 		print()
 		print("Installing...")
 		print()
-		os.system('installer.sh')
+		os.system('bash installer.sh')
 		time.sleep(0.25)
 		print("Installation Successful")
 	else:
