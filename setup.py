@@ -163,6 +163,8 @@ def main():
 	a=input("1/2/3/4/5/6/a ==> ")
 	print(h1)
 	if a=='7':
+		os.system('clear')
+		logo7()
 		print(h1)
 		l=int(input("Enter The Lenght = "))
 		b=int(input("Enter The Base = "))
