@@ -1,4 +1,12 @@
-"""
+
+l = "░█▄█░█▀█░▀█▀░█░█░█▀▀"
+o = "░█░█░█▀█░░█░░█▀█░▀▀█"
+g = "░▀░▀░▀░▀░░▀░░▀░▀░▀▀▀"
+def logo():
+	print(l)
+	print(o)
+	print(g)
+lic = """
 The MIT License (MIT)
 
 Copyright (c) 2021 @T-Dynamos
@@ -28,18 +36,40 @@ from random import randint
 import math
 import time
 import os
+import random
 import requests
 from tables import table_ex
 os.system('clear')
 version_info = '3.0'
 ins ='Restart ? y/n = '
 pi=22/7
-def logo7():
- 
+def color():
+	cyan = (Fore.CYAN)
+	yellow = (Fore.YELLOW)
+	green = (Fore.GREEN)
+	blue = (Fore.BLUE)
+	red = (Fore.RED)
+	pink = (Fore.MAGENTA)
+	color = random.randint(1 , 6)
+	if color == 1:
+		col = (cyan)
+	if color == 2:
+		col = (yellow)
+	if color == 3:
+		col = (green)
+	if color == 4:
+		col = (blue)
+	if color == 5:
+		col = (red)
+	if color == 6:
+		col = (pink)
+	print(col)
+def logo7(): 
 	import os
-	os.system('toilet -f pagga "Maths" | lolcat')
-	print(Fore.LIGHTCYAN_EX + Back.BLACK)
+	color()
+	logo()
 	colorama.init()
+	print(Fore.CYAN)
 def pivalue():
 	print(h1)
 	print("1. 22/7 ")
