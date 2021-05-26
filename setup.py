@@ -1,4 +1,4 @@
-
+#what are you doing here 
 l = "░█▄█░█▀█░▀█▀░█░█░█▀▀"
 o = "░█░█░█▀█░░█░░█▀█░▀▀█"
 g = "░▀░▀░▀░▀░░▀░░▀░▀░▀▀▀"
@@ -39,6 +39,35 @@ import os
 import random
 import requests
 from tables import table_ex
+def eluatxt():
+	print(Fore.GREEN + Style.BRIGHT + "*THIS IS NOT BLA-BLA")
+	print()
+	print("++++++++++++++++++++")
+	print(Fore.CYAN  + "Terms and Conditions")
+	print(Fore.GREEN +"++++++++++++++++++++")
+	print()
+	print(Fore.WHITE + lic)
+	print("If you are using this program you should ensure that you are not sitting in a examination and you are  not using this program for cheating . If you ignore this and you use this program in examination  it will not be our fault . ")
+	print()
+def eulapa():	
+	it = os.path.isfile('hack.txt')
+	if it == True:
+		print()
+	if it == False:
+		os.system('clear')
+		eluatxt()	
+		print()
+		print("Write Down This to continue ")
+		print()
+		print(Fore.RED + "I accepted this bla bla")
+		print()
+		hj = input("==> ")
+		if hj == 'I accepted this bla bla':
+			f= open("hack.txt","w+")
+			print()
+		else:
+			return eulapa()
+eulapa()
 os.system('clear')
 version_info = '3.0'
 ins ='Restart ? y/n = '
@@ -114,8 +143,6 @@ def update():
 		print()
 		os.remove('setup.py')
 		print("Downloading...")
-		os.system('pip install py-loader')
-		os.system('pip install table-ex')
 		down()
 		time.sleep(1)
 		print()
