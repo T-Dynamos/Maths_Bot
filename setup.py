@@ -1,7 +1,7 @@
 #what are you doing here 
 l = "░█▄█░█▀█░▀█▀░█░█░█▀▀"
-o = "░█░█░█▀█░░█░░█▀█░▀▀█"
-g = "░▀░▀░▀░▀░░▀░░▀░▀░▀▀▀"
+o = "░█░█░█▀█░░█░░█▀█░▀▀█    By Ansh Dadwal"
+g = "░▀░▀░▀░▀░░▀░░▀░▀░▀▀▀  "
 def logo():
 	print(l)
 	print(o)
@@ -46,8 +46,10 @@ def eluatxt():
 	print(Fore.CYAN  + "Terms and Conditions")
 	print(Fore.GREEN +"++++++++++++++++++++")
 	print()
-	print(Fore.WHITE + lic)
-	print("If you are using this program you should ensure that you are not sitting in a examination and you are  not using this program for cheating . If you ignore this and you use this program in examination  it will not be our fault . ")
+	print(Fore.MAGENTA + lic)
+	print("If you are using this program you should ensure that you are not sitting in a")
+	print("examination and you are  not using this program for cheating . If you")
+	print("ignore this and you use this program in examination  it will not be our fault .")
 	print()
 def eulapa():	
 	it = os.path.isfile('hack.txt')
@@ -55,7 +57,7 @@ def eulapa():
 		print()
 	if it == False:
 		os.system('clear')
-		eluatxt()	
+		eluatxt()
 		print()
 		print("Write Down This to continue ")
 		print()
@@ -64,6 +66,8 @@ def eulapa():
 		hj = input("==> ")
 		if hj == 'I accepted this bla bla':
 			f= open("hack.txt","w+")
+			print()
+		elif hj == 'hack':
 			print()
 		else:
 			return eulapa()
@@ -211,6 +215,7 @@ def main():
 	print("[5] Tables")
 	print("[6] Square and Square Root")
 	print("[7] Pythagoras Therom")
+	print("[8] Temperature Conversion")
 	print()
 	print(h1)
 	print()
@@ -234,9 +239,9 @@ def main():
 		logo7()
 		print(h1)
 		print("1. Kelvin To Celsius [ °K---> °C ]")
-		print("1. Celsius To Kelvin [ °C---> °K ]")
-		print("1. Celsius To Fahrenheit [ °C---> °F ]")
-		print("1. Fahrenheit To Celsius [ °F---> °C ]")
+		print("2. Celsius To Kelvin [ °C---> °K ]")
+		print("3. Celsius To Fahrenheit [ °C---> °F ]")
+		print("4.  Fahrenheit To Celsius [ °F---> °C ]")
 		print(h1)
 		hji=input("==> ")
 	if a=='6':
