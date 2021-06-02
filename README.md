@@ -30,6 +30,7 @@ python setup.py
 ```
 clear
 echo -e INSTALLING
+winget install python
 python -m pip install requests
 python -m pip install table-ex
 python -m pip install colorama
