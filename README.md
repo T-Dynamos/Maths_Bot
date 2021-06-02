@@ -1,4 +1,4 @@
-# Maths_Bot
+# Maths Bot
 ![asciicast](https://github.com/T-Dynamos/Maths_Bot/raw/main/logo.jpg)
 
 Maths Bot with many different types of features like auto-updation and many other formulas for all life
