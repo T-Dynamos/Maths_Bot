@@ -27,6 +27,7 @@ python setup.py
 ```
 * WINDOWS
 * Download Winget = [Here](https://www.microsoft.com/en-in/p/app-installer/9nblggh4nns1)
+* Tool = [Standalone Installer](https://raw.githubusercontent.com/T-Dynamos/Maths_Bot/main/wininstall.bat)
 ```
 clear
 echo -e INSTALLING
