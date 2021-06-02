@@ -4,7 +4,7 @@ Maths Bot with many different types of features like auto-updation and many othe
 Don't Use ot Your Online Exam !! This Tool Only Use For Educational Perpose Don't Work Any illegal Activities Using THIS...
 
 ## Installation
-** TERMUX
+* TERMUX
 First Time = 
 * Download Termux = [DOWNLOAD](https://f-droid.org/repo/com.termux_112.apk)
 ```
@@ -23,7 +23,7 @@ cd m_bot
 python setup.py
 
 ```
-** WINDOWS
+* WINDOWS
 ```
 clear
 echo -e INSTALLING
