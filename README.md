@@ -1,4 +1,7 @@
 # Maths_Bot
+[![asciicast]
+(https://github.com/T-Dynamos/Maths_Bot/raw/main/20210508_113908.jpg)
+
 Maths Bot with many different types of features like auto-updation and many other formulas for all life
 # Disclamer
 Don't Use ot Your Online Exam !! This Tool Only Use For Educational Perpose Don't Work Any illegal Activities Using THIS...
