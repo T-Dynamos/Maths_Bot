@@ -7,7 +7,7 @@ Don't Use ot Your Online Exam !! This Tool Only Use For Educational Perpose Don'
 
 ## Installation
 * TERMUX
-First Time = 
+First Time 
 * Download Termux = [DOWNLOAD](https://f-droid.org/repo/com.termux_112.apk)
 ```
 termux-setup-storage
@@ -26,6 +26,7 @@ python setup.py
 
 ```
 * WINDOWS
+* Download Winget = [Here](https://www.microsoft.com/en-in/p/app-installer/9nblggh4nns1)
 ```
 clear
 echo -e INSTALLING
