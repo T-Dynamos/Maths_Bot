@@ -1,6 +1,6 @@
 # Maths_Bot
-[![asciicast]
-[(https://github.com/T-Dynamos/Maths_Bot/raw/main/20210508_113908.jpg)]
+[asciicast]
+(https://github.com/T-Dynamos/Maths_Bot/raw/main/20210508_113908.jpg)
 
 Maths Bot with many different types of features like auto-updation and many other formulas for all life
 # Disclamer
