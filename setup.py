@@ -430,7 +430,7 @@ def main():
 				yt=int(input("Side"))
 				print("Area = ",yt*yt)
 				print(h1)
-				restar()
+				restart()
 			if x=='2':
 				print(h1)
 				yt=int(input("Length = "))
@@ -450,7 +450,7 @@ def main():
 				b=int(input("Base = "))
 				print("Area = ",b*h)
 				print(h1)
-				restar()
+				restart()
 			if x=='5':
 				print(h1)
 				h=int(input("Height = "))
