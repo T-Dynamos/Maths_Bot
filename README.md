@@ -21,8 +21,7 @@ bash installer.sh
 ```
 Second Time = 
 ```
-cd m_bot 
-python setup.py
+mbot
 
 ```
 * WINDOWS
