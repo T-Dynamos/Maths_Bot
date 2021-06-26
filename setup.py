@@ -90,7 +90,7 @@ def eulapa():
 			return eulapa()
 eulapa()
 os.system('clear')
-version_info = '3.1.0'
+version_info = '4.0'
 ins ='Restart ? y/n = '
 pi=22/7
 def printu(string):
