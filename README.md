@@ -1,5 +1,13 @@
-# Maths Bot
-![asciicast](https://github.com/T-Dynamos/Maths_Bot/raw/main/logo.jpg)
+
+![logo](https://github.com/T-Dynamos/Maths_Bot/raw/main/logo.jpg)  <br />
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Maintained%3F-Yes-green?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/T-Dynamos/termux-pro?style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/T-Dynamos/termux-pro?color=violet&style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/T-Dynamos/termux-pro?color=teal&style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/T-Dynamos/termux-pro?style=for-the-badge">
+</p>
 
 Maths Bot with many different types of features like auto-updation and many other formulas for all life
 # Disclamer
