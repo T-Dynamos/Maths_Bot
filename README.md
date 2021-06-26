@@ -1,5 +1,5 @@
 
-![logo](https://github.com/T-Dynamos/Maths_Bot/raw/main/logo.jpg)  <br />
+![logo](https://github.com/T-Dynamos/Maths_Bot/raw/main/banner.jpg)  <br />
 
 <p align="center">
   <img src="https://img.shields.io/badge/Maintained%3F-Yes-green?style=for-the-badge">
