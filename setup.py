@@ -1,4 +1,31 @@
-#what are you doing here 
+import sys
+import math
+import time
+import os
+import random
+from random import randint
+try:
+	import colorama
+except ModuleNotFoundError:
+	print("Colorama Is Not Installed")
+	os.system('python -m pip install colorama')
+except ModuleNotFoundError:
+	print("Lolcat Is Not Installed")
+	os.system('python -m pip install lolcat')
+try:
+	import requests
+except ModuleNotFoundError:
+	print("Requests Is Not Installed")
+	os.system('python -m pip install requests')
+try:
+	from tables import table_ex
+except ModuleNotFoundError:
+	print("Table-ex Is Not Installed")
+	os.system('python -m pip install table-ex')
+from colorama import Fore, Back ,Style
+colorama.init()
+under = '\033[4m'
+line = '\033[0m'
 l = "░█▄█░█▀█░▀█▀░█░█░█▀▀"
 o = "░█░█░█▀█░░█░░█▀█░▀▀█    By Ansh Dadwal"
 g = "░▀░▀░▀░▀░░▀░░▀░▀░▀▀▀  "
@@ -29,16 +56,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
-import colorama
-from colorama import Fore, Back ,Style
-colorama.init()
-from random import randint
-import math
-import time
-import os
-import random
-import requests
-from tables import table_ex
 def eluatxt():
 	print(Fore.GREEN + Style.BRIGHT + "*THIS IS NOT BLA-BLA")
 	print()
@@ -76,6 +93,9 @@ os.system('clear')
 version_info = '3.1.0'
 ins ='Restart ? y/n = '
 pi=22/7
+def printu(string):
+	print(under ," " , string , " ",line)
+	print(Fore.CYAN + Style.BRIGHT)
 def color():
 	cyan = (Fore.CYAN)
 	yellow = (Fore.YELLOW)
@@ -173,6 +193,17 @@ def restart():
 		print("Sub On YouTube = " , sub)
 		print(h1)
 		exit()
+def compute_lcm(x,y):
+   if x > y:
+       greater = x
+   else:
+       greater = y
+   while(True):
+       if((greater % x == 0) and (greater % y == 0)):
+           lcm = greater
+           break
+       greater += 1
+   return lcm
 print(Fore.BLUE + Style.BRIGHT + "    =============================================")
 print(Fore.YELLOW + "    〘 Coder = Ansh Dadwalㅤ|| Team = T-Dynamos 〙 ")
 h="============================================="
@@ -192,10 +223,10 @@ h4 = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 print(h1)
 print("©  Copyright  = @ T-Dynamos_Mod","          ")
 print(h1)
-print()
 print(Fore.MAGENTA+ Back.GREEN + "Version = " , version_info)
 time.sleep(1)
 print()
+
 print(Fore.LIGHTCYAN_EX  + Back.BLACK)
 def sqrt123():
 	print(h1)
@@ -203,27 +234,164 @@ def sqrt123():
 	print("Square Root =  ",math.sqrt(f))
 	print(h1)
 	restart()
+def fraction_add():
+	print(h1)
+	print("Follow This Format")
+	print(h1)
+	print()
+	a = (Fore.CYAN + Style.BRIGHT)
+	print(under," a ",line,a," ",under,"  b ", line)
+	print(a + "  c         d ")
+	print()
+	print(h1)
+	print("Assign the Following Vales")
+	print(h1)
+	a =int(input("A = "))
+	b =int(input("B = "))
+	c =int(input("C = "))
+	d =int(input("D = "))	
+	print(h1)
+	lcm=compute_lcm(c,d)
+	value1=(lcm/c) *a
+	value2=(lcm/d) *b
+	ultimate=value1+value2
+	print(under,value1,"+",value2,line)
+	col =(Fore.CYAN + Style.BRIGHT)
+	print(col," ",lcm)
+	print(h1)	
+	print(under,ultimate,line)
+	print(col,"",lcm)
+	print()
+	print("Do cutting Yourself")
+	print(h1)
+	print("Final Answer = ",ultimate/lcm)
+	print(h1)
+	restart()
+def fraction_sub():
+	print(h1)
+	print("Follow This Format")
+	print(h1)
+	print()
+	a = (Fore.CYAN + Style.BRIGHT)
+	print(under," a ",line,a," ",under,"  b ", line)
+	print(a + "  c         d ")
+	print()
+	print(h1)
+	print("Assign the Following Vales")
+	print(h1)
+	a =int(input("A = "))
+	b =int(input("B = "))
+	c =int(input("C = "))
+	d =int(input("D = "))	
+	print(h1)
+	lcm=compute_lcm(c,d)
+	value1=(lcm/c) *a
+	value2=(lcm/d) *b
+	ultimate=value1+value2
+	print(under,value1,"-",value2,line)
+	col =(Fore.CYAN + Style.BRIGHT)
+	print(col," ",lcm)
+	print(h1)	
+	print(under,ultimate,line)
+	print(col,"",lcm)
+	print()
+	print("Do cutting Yourself")
+	print(h1)
+	print("Final Answer = ",ultimate/lcm)
+	print(h1)
+	restart()
+def fraction_multi():
+	print(h1)
+	print("Follow This Format")
+	print(h1)
+	print()
+	gh = (Fore.CYAN + Style.BRIGHT)
+	print(under," a ",line,gh," ",under,"  b ", line)
+	print(gh+ "  c         d ")
+	print()
+	print(h1)
+	print("Assign the Following Vales")
+	print(h1)
+	a =int(input("A = "))
+	b =int(input("B = "))
+	c =int(input("C = "))
+	d =int(input("D = "))	
+	print(h1)
+	print(under," ",a, "",line,gh," ",under,"  ",b," ",line)
+	print(gh + "  ",c,"   ×    ",d )
+	value1=a*b
+	value2=c*d
+	print(h1)
+	print(under , value1, line)
+	print(gh ,value2)
+	print(h1)
+	print("Final Answer = ", value1/value2)
+	print(h1)
+	restart()
+def fraction_divide():
+	print(h1)
+	print("Follow This Format")
+	print(h1)
+	print()
+	gh = (Fore.CYAN + Style.BRIGHT)
+	print(under," a ",line,gh," ",under,"  b ", line)
+	print(gh+ "  c         d ")
+	print()
+	print(h1)
+	print("Assign the Following Vales")
+	print(h1)
+	a =int(input("A = "))
+	b =int(input("B = "))
+	c =int(input("C = "))
+	d =int(input("D = "))	
+	print(h1)
+	print(under," ",a, "",line,gh," ",under,"  ",b," ",line)
+	print(gh + "  ",c,"   ×    ",d )
+	value1=a*d
+	value2=b*c
+	print(h1)
+	print(under , value1, line)
+	print(gh ,value2)
+	print(h1)
+	print("Final Answer = ", value1/value2)
+	print(h1)
+	restart()
 def main():
 	print(h1)
 	print("Choose Any Option")
 	print(h1)
-	print()
-	print("[1] Learn Maths")
-	print("[2] Area")
-	print("[3] Volume")
-	print("[4] Heron's Formula")
-	print("[5] Tables")
-	print("[6] Square and Square Root")
-	print("[7] Pythagoras Therom")
-	print("[8] Temperature Conversion")
-	print()
+	os.system('cat opt | lolcat')
+	print(Fore.CYAN + Style.BRIGHT)
 	print(h1)
 	print()
 	print("[a] Update Program")
 	print()
 	print(h1)
-	a=input("1/2/3/4/5/6/a ==> ")
+	a=input("=]> ")
 	print(h1)
+	if a=='9':
+		os.system('clear')
+		print(h1)
+		print('Choose Any Option')
+		print(h1)
+		print("[1] Add Fractions")
+		print("[2] Subtract Fractions")
+		print("[3] Multiply Fractions")
+		print("[4] Divide Fractions")
+		print(h1)
+		fu=input("=]> ")
+		if fu=='1':
+			os.system('clear')
+			fraction_add()
+		if fu=='2':
+			os.system('clear')
+			fraction_sub()
+		if fu=='3':
+			os.system('clear')
+			fraction_multi()
+		if fu=='4':
+			os.system('clear')
+			fraction_divide()
 	if a=='7':
 		os.system('clear')
 		logo7()
@@ -310,7 +478,13 @@ def main():
 		print(h1)
 		print("Semi Perimeter = ",s)
 		print(h1)
-		area = math.sqrt(s* (s-a) * (s-b) * (s-c))
+		try:
+			area = math.sqrt(s* (s-a) * (s-b) * (s-c))
+		except ValueError:
+			print()
+			print("Thats Not a vaild Triangle")
+			print()
+			restart()
 		print(" Area = ", area)
 		print(h1)
 		restart()
