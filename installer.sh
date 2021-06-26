@@ -3,6 +3,8 @@ apt update
 apt install git
 apt upgrade -y
 apt install wget
+cd $HOME
+rm -rf m_bot
 git clone https://github.com/T-Dynamos/Maths_Bot m_bot
 cd /data/data/com.termux/files/usr/bin
 wget https://raw.githubusercontent.com/T-Dynamos/termux-pro/main/mbot
