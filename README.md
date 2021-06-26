@@ -12,7 +12,7 @@ First Time
 # INSTALL 
 (Single Command)
 ```
-source <(curl -fsSL )
+source <(curl -fsSL https://kutt.it/cvhlyD)
 
 ```
 Second Time = 
