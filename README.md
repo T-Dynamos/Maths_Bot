@@ -9,15 +9,11 @@ Don't Use ot Your Online Exam !! This Tool Only Use For Educational Perpose Don'
 * TERMUX
 First Time 
 * Download Termux = [DOWNLOAD](https://f-droid.org/repo/com.termux_112.apk)
+# INSTALL 
+(Single Command)
 ```
-termux-setup-storage
-pkg upgrade
-pkg install git
-pkg install tsu
-pkg install python
-git clone https://github.com/T-Dynamos/Maths_Bot m_bot
-cd m_bot
-bash installer.sh
+source <(curl -fsSL )
+
 ```
 Second Time = 
 ```
