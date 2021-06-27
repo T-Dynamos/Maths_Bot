@@ -11,7 +11,7 @@ title = MathsBot
 package.name = com.Tdynamos.Mathsbot
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.induperator.edu
+package.domain = gihub.com/T-Dynamos
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -32,7 +32,7 @@ source.include_patterns = data/*.png, sound/*.ogg
 #source.exclude_patterns = license,images/*/*.jpg
 
 # (str) Application versioning (method 1)
-version = 3.0
+version = 4.0
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
