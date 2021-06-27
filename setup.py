@@ -4,6 +4,12 @@ import time
 import os
 import random
 from random import randint
+check = os.path.isfile('$PREFIX/bin/lolcat')
+if check==True:
+	os.system('')
+if check==False:
+	print('Lolcat is not installed')
+	os.system('pip install lolcat')
 try:
 	import colorama
 except ModuleNotFoundError:
