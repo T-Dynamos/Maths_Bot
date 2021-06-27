@@ -1,8 +1,10 @@
 clear
 apt update 
-apt install git
+apt install git -y
 apt upgrade -y
 apt install wget
+apt install python -y
+pip install lolcat
 cd $HOME
 rm -rf m_bot
 git clone https://github.com/T-Dynamos/Maths_Bot m_bot
