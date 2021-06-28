@@ -4,7 +4,7 @@ import time
 import os
 import random
 from random import randint
-check = os.path.isfile('$PREFIX/bin/lolcat')
+check = os.path.isfile('/data/data/com.termux/files/usr/lib/python3.9/site-packages/lolcat-1.4-py3.9.egg-info/dependency_links.txt')
 if check==True:
 	os.system('')
 if check==False:
@@ -367,12 +367,9 @@ def main():
 	print("Choose Any Option")
 	print(h1)
 	os.system('cat opt | lolcat')
-	print(Fore.CYAN + Style.BRIGHT)
-	print(h1)
-	print()
+	print(Fore.CYAN + Style.BRIGHT , h1)
 	print("[a] Update Program")
-	print()
-	print(h1)
+	print("",h1)
 	a=input("=]> ")
 	print(h1)
 	if a=='9':
