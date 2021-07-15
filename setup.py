@@ -182,6 +182,7 @@ def logo7():
 	import os
 	color()
 	logo()
+	print(Fore.BLACK+ Back.GREEN + "Version = " , "",version_info,Fore.CYAN + Style.BRIGHT + Fore.RESET + Back.RESET )
 	colorama.init()
 	print(Fore.CYAN)
 def pivalue():
@@ -229,12 +230,10 @@ def update():
 		os.remove('setup.py')
 		print("Downloading...")
 		down()
-		time.sleep(1)
 		print()
 		print("Installing...")
 		print()
 		os.system('bash installer.sh')
-		time.sleep(0.25)
 		print("Installation Successful")
 	else:
 		restart()
@@ -265,14 +264,13 @@ def compute_lcm(x,y):
            break
        greater += 1
    return lcm
-print(Fore.BLUE + Style.BRIGHT + "    =============================================")
+print(Fore.RESET + Fore.BLUE + Style.BRIGHT + "    =============================================")
 print(Fore.YELLOW + "    〘 Coder = Ansh Dadwalㅤ|| Team = T-Dynamos 〙 ")
 h="============================================="
-h1= "══════════════════════════════"
+h1=("══════════════════════════════")
 print(Fore.BLUE +"   ", h)
 sub="https://youtube.com/channel/UCCGprYqpszbeAYMGbjlh-aA"
 colorama.init(autoreset=False)
-time.sleep(0.25)
 print(Fore.RED)
 
 #Ansh Dadwal is great and this company is owned by Ansh Dadwal 
@@ -284,11 +282,10 @@ h4 = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 print(h1)
 print("©  Copyright  = @ T-Dynamos","          ")
 print(h1)
-print(Fore.MAGENTA+ Back.GREEN + "Version = " , version_info)
-time.sleep(1)
-print()
-
-print(Fore.LIGHTCYAN_EX  + Back.BLACK)
+print(Fore.LIGHTCYAN_EX)
+def  cyan(str):
+	print(Fore.CYAN + Style.BRIGHT , str)
+	
 def sqrt123():
 	print(h1)
 	f=int(input("Enter The Number = "))
@@ -422,10 +419,10 @@ def main():
 	print("Choose Any Option")
 	print(h1)
 	os.system('cat opt | lolcat')
-	print(Fore.CYAN + Style.BRIGHT , h1)
-	print("[a] Update Program")
-	print("",h1)
-	a=input("=]> ")
+	cyan(h1)
+	print(" [a] Update Program")
+	cyan(h1)
+	a=input(" =]> ")
 	print(h1)
 	if a=='9':
 		os.system('clear')
