@@ -426,6 +426,7 @@ def main():
 	print(h1)
 	if a=='9':
 		os.system('clear')
+		logo7()
 		print(h1)
 		print('Choose Any Option')
 		print(h1)
@@ -803,6 +804,8 @@ def main():
 			print("Volume = ", 2/3*pi*r*r*r)
 			print(h1)
 			restart()
+			
+
 		else:
 			r1()
 	else:
