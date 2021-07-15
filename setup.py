@@ -277,12 +277,12 @@ print(Fore.RED)
 
 #Ansh Dadwal is great and this company is owned by Ansh Dadwal 
 logo7()
-print(Fore.LIGHTCYAN_EX + Back.BLACK)
+print(Fore.LIGHTCYAN_EX)
 india()
 print()
 h4 = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 print(h1)
-print("©  Copyright  = @ T-Dynamos_Mod","          ")
+print("©  Copyright  = @ T-Dynamos","          ")
 print(h1)
 print(Fore.MAGENTA+ Back.GREEN + "Version = " , version_info)
 time.sleep(1)
