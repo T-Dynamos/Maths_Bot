@@ -327,6 +327,8 @@ def restart():
 	r=input(ins)
 	if r =='y':
 		os.system('clear')
+		os.system('clear')
+		os.system('cd $HOME/m_bot/')
 		logo7()
 		main()
 	else:
@@ -645,7 +647,8 @@ def main():
 		update()
 	if a=='1':
 		print(h1)
-		print("Lol you can't")
+		print("Wathch this video turtorial")
+		os.system('xdg-open https://youtu.be/dQw4w9WgXcQ')
 		print(h1)
 		restart()
 		print(h1)
