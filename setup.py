@@ -316,6 +316,7 @@ def update():
 		os.system('bash installer.sh')
 		print("Installation Successful")
 	else:
+		os.system(' cd $HOME/m_bot')
 		restart()
 def r1():
 	print(h1)
