@@ -28,6 +28,11 @@ try:
 except ModuleNotFoundError:
 	print("Table-ex Is Not Installed")
 	os.system('python -m pip install table-ex')
+try:
+	import riposte
+except ModuleNotFoundError:
+	print("riposte Is Not Installed")
+	os.system('python -m pip install riposte')
 from colorama import Fore, Back ,Style
 colorama.init()
 under = '\033[4m'
@@ -117,6 +122,79 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
+from riposte import Riposte
+
+calculator = Riposte(prompt="[math]> ")
+
+MEMORY = []
+
+@calculator.command("help")
+def help():
+	print()
+	print(h1)
+	print("Welcome To Calculator")
+	print(h1)
+	print("Here Are some options you can use : ")
+	print("Relplace x and y with your value")
+	print()
+	print(" [1] add       x y ")
+	print(" [2] divide    x y ")
+	print(" [3] multiply  x y ")
+	print(" [4] sub       x y ")
+	print(" [5] banner    To print banner")
+	print(" [6] res       To restart")
+	print(" [7] ex        To exit")
+	print(" [8] clear     To clear screen")
+	print()
+	print(h1)
+	print()
+    	
+@calculator.command("banner")
+def banner():
+	logo7()
+	
+@calculator.command("res")
+def res():
+	restart()
+
+@calculator.command("ex")
+def ex():
+	exit()
+
+@calculator.command("clear")
+def clear():
+	os.system('clear')
+	
+@calculator.command("add")
+def add(x: int, y: int):
+    result = f"{x} + {y} = {x + y}"
+    MEMORY.append(result)
+    calculator.success(result)
+
+
+@calculator.command("multiply")
+def multiply(x: int, y: int):
+    result = f"{x} × {y} = {x * y}"
+    MEMORY.append(result)
+    calculator.success(result)
+    
+@calculator.command("divide")
+def multiply(x: int, y: int):
+    result = f"{x} ÷ {y} = {x / y}"
+    MEMORY.append(result)
+    calculator.success(result)
+    
+@calculator.command("sub")
+def multiply(x: int, y: int):
+    result = f"{x} - {y} = {x - y}"
+    MEMORY.append(result)
+    calculator.success(result)
+
+@calculator.command("memory")
+def memory():
+    for entry in MEMORY:
+        calculator.print(entry)
+        
 def eluatxt():
 	print(Fore.GREEN + Style.BRIGHT + "*THIS IS NOT BLA-BLA")
 	print()
@@ -424,6 +502,8 @@ def main():
 	cyan(h1)
 	a=input(" =]> ")
 	print(h1)
+	if a=='10':
+		calculator.run()
 	if a=='9':
 		os.system('clear')
 		logo7()
