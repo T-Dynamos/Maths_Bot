@@ -123,8 +123,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
 from riposte import Riposte
+math = (Fore.BLUE + Style.BRIGHT + "[" + Fore.RED + "math" + Fore.BLUE + "]> " + Fore.RESET + Fore.GREEN)
 
-calculator = Riposte(prompt="[math]> ")
+calculator = Riposte(prompt=(math))
 
 MEMORY = []
 
@@ -156,7 +157,6 @@ def banner():
 @calculator.command("res")
 def res():
 	exit()
-	restart()
 
 @calculator.command("ex")
 def ex():
@@ -505,6 +505,7 @@ def main():
 	a=input(" =]> ")
 	print(h1)
 	if a=='10':
+		os.system('cd $HOME/m_bot')
 		calculator.run()
 	if a=='9':
 		os.system('clear')
