@@ -509,6 +509,7 @@ def main():
 	print(h1)
 	if a=='10':
 		os.system('cd $HOME/m_bot')
+		print("Type help to start")
 		calculator.run()
 	if a=='9':
 		os.system('clear')
