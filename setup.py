@@ -326,7 +326,7 @@ def r1():
 def restart():
 	r=input(ins)
 	if r =='y':
-		os.system('clear | cd $HOME/m_bot')
+		os.system('clear')
 		logo7()
 		main()
 	else:
