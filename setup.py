@@ -128,7 +128,8 @@ math = (Fore.BLUE + Style.BRIGHT + "[" + Fore.RED + "math" + Fore.BLUE + "]> " +
 calculator = Riposte(prompt=(math))
 
 MEMORY = []
-
+def heading(num,txt):
+	print(Fore.RESET + Fore.RED + "[" + Fore.GREEN + num + Fore.RED + "]" + Fore.CYAN + txt )
 @calculator.command("help")
 def help():
 	print()
@@ -136,36 +137,32 @@ def help():
 	print("Welcome To Calculator")
 	print(h1)
 	print("Here Are some options you can use : ")
+	print()
 	print("Relplace x and y with your value")
 	print()
-	print(" [1] add       x y ")
-	print(" [2] divide    x y ")
-	print(" [3] multiply  x y ")
-	print(" [4] sub       x y ")
-	print(" [5] banner    To print banner")
-	print(" [6] res       To restart")
-	print(" [7] ex        To exit")
-	print(" [8] clear     To clear screen")
+	heading('1','add           x y')
+	heading('2','multiply      x y')
+	heading('3','sub           x y')
+	heading('4','divide        x y')
 	print()
+	print("Extra Options")
+	print()
+	heading('1','restart   To restart')
+	heading('2','exit      To exit')
+	heading('3','banner    To print banner')
+	heading('4','main      To start main activity')
+	print()
+	
 	print(h1)
 	print()
     	
 @calculator.command("banner")
 def banner():
 	logo7()
-	
-@calculator.command("res")
-def res():
-	exit()
 
-@calculator.command("ex")
-def ex():
-	exit()
-
-@calculator.command("clear")
-def clear():
-	os.system('clear')
-	
+@calculator.command("exit")
+def exit():
+	sys.exit()	
 @calculator.command("add")
 def add(x: int, y: int):
     result = f"{x} + {y} = {x + y}"
@@ -292,6 +289,7 @@ def india():
 	ind=Fore.GREEN + 'INDIA'
 	print("  ",m ,"" ,i, "",ind)
 	print(h3)
+@calculator.command("clear")
 def clear():
 	os.system('clear')
 def down():
@@ -302,6 +300,7 @@ def down():
 		for chunk in req.iter_content(chunk_size=8192):
 			if chunk:
 				f.write(chunk)
+
 def update():
 	print(h1)
 	x=input("Do You want to update y/n ==> ")
@@ -323,6 +322,7 @@ def r1():
 	print("Worng Option Idiot")
 	print(h1)
 	restart()
+@calculator.command("restart")
 def restart():
 	r=input(ins)
 	if r =='y':
@@ -497,6 +497,7 @@ def fraction_divide():
 	print("Final Answer = ", value1/value2)
 	print(h1)
 	restart()
+@calculator.command("main")
 def main():
 	print(h1)
 	print("Choose Any Option")
