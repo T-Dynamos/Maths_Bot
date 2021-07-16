@@ -155,6 +155,7 @@ def banner():
 	
 @calculator.command("res")
 def res():
+	exit()
 	restart()
 
 @calculator.command("ex")
@@ -194,6 +195,7 @@ def multiply(x: int, y: int):
 def memory():
     for entry in MEMORY:
         calculator.print(entry)
+
         
 def eluatxt():
 	print(Fore.GREEN + Style.BRIGHT + "*THIS IS NOT BLA-BLA")
