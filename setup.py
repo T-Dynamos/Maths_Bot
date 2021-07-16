@@ -499,7 +499,7 @@ def main():
 	print(h1)
 	print("Choose Any Option")
 	print(h1)
-	os.system('cat opt | lolcat')
+	os.system('cat $HOME/m_bot/opt | lolcat')
 	cyan(h1)
 	print(" [a] Update Program")
 	cyan(h1)
