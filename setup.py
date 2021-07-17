@@ -29,7 +29,7 @@ except ModuleNotFoundError:
 	print("Table-ex Is Not Installed")
 	os.system('python -m pip install table-ex')
 try:
-	import riposte
+	from riposte import Riposte
 except ModuleNotFoundError:
 	print("riposte Is Not Installed")
 	os.system('python -m pip install riposte')
@@ -128,14 +128,16 @@ math = (Fore.BLUE + Style.BRIGHT + "[" + Fore.RED + "math" + Fore.BLUE + "]> " +
 calculator = Riposte(prompt=(math))
 
 MEMORY = []
+import threading
+
 def heading(num,txt):
 	print(Fore.RESET + Fore.RED + "[" + Fore.GREEN + num + Fore.RED + "]" + Fore.CYAN + txt )
 @calculator.command("help")
 def help():
 	print()
-	print(h1)
+	print(h1 +"═════")
 	print("Welcome To Calculator")
-	print(h1)
+	print(h1 +"═════")
 	print("Here Are some options you can use : ")
 	print()
 	print("Relplace x and y with your value")
@@ -151,9 +153,9 @@ def help():
 	heading('2','exit      To exit')
 	heading('3','banner    To print banner')
 	heading('4','main      To start main activity')
-	print()
+	print(Fore.GREEN)
 	
-	print(h1)
+	print(h1 +"═════")
 	print()
     	
 @calculator.command("banner")
@@ -511,7 +513,15 @@ def main():
 	if a=='10':
 		os.system('cd $HOME/m_bot')
 		print("Type help to start")
-		calculator.run()
+		print()
+		try:
+			calculator.run()
+		except RuntimeError:
+			print("Previous Cli Running")
+			time.sleep(3)
+			print("Stopped")
+			exit()
+			
 	if a=='9':
 		os.system('clear')
 		logo7()
