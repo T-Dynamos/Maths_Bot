@@ -229,8 +229,22 @@ def eulapa():
 		else:
 			return eulapa()
 eulapa()
+def optxt():
+	file1 = open("opt","w") 
+	L = ["[1] Learn Maths  \n",
+	 "[2] Area \n",
+	 "[3] Volume  \n",
+	 "[4] Heron's Formula  \n",
+	 "[5] Tables  \n",
+	 "[6] Square and Square Root  \n",
+	 "[7] Pythagoras Therom  \n",
+	 "[8] Temperature Conversion  \n",
+	 "[9] Fractions  \n",
+	 "[10] Calculator Commandline  \n"]	 
+	file1.writelines(L) 
+	file1.close() 
 os.system('clear')
-version_info = '5.0'
+version_info = '6.0'
 ins ='Restart ? y/n = '
 pi=22/7
 def printu(string):
@@ -329,8 +343,6 @@ def restart():
 	r=input(ins)
 	if r =='y':
 		os.system('clear')
-		os.system('clear')
-		os.system('cd $HOME/m_bot/')
 		logo7()
 		main()
 	else:
@@ -504,14 +516,19 @@ def main():
 	print(h1)
 	print("Choose Any Option")
 	print(h1)
-	os.system('cat $HOME/m_bot/opt | lolcat')
-	cyan(h1)
+	an = os.path.isfile('$HOME/m_bot/opt')
+	if an == True:
+		os.sys()
+	if an == False:
+		optxt()
+	os.system('cat opt | lolcat')
+	os.remove('opt')
+	print(Fore.CYAN + Style.BRIGHT + h1)
 	print(" [a] Update Program")
-	cyan(h1)
+	print(h1)
 	a=input(" =]> ")
 	print(h1)
 	if a=='10':
-		os.system('cd $HOME/m_bot')
 		print("Type help to start")
 		print()
 		try:
