@@ -123,9 +123,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
 from riposte import Riposte
-math = (Fore.BLUE + Style.BRIGHT + "[" + Fore.RED + "math" + Fore.BLUE + "]> " + Fore.RESET + Fore.GREEN)
+math1 = (Fore.BLUE + Style.BRIGHT + "[" + Fore.RED + "math" + Fore.BLUE + "]> " + Fore.RESET + Fore.GREEN)
 
-calculator = Riposte(prompt=(math))
+calculator = Riposte(prompt=(math1))
 
 MEMORY = []
 import threading
@@ -660,7 +660,7 @@ def main():
 	if a=='1':
 		print(h1)
 		print("Wathch this video turtorial")
-		os.system('xdg-open https://youtu.be/dQw4w9WgXcQ')
+		os.system('xdg-open https://youtu.be/UcRtFYAz2Yo')
 		print(h1)
 		restart()
 		print(h1)
