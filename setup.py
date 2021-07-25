@@ -1,5 +1,3 @@
-#!/data/data/com.termux/files/usr/bin/python3
-#!/usr/bin/python3
 import sys
 import math
 import time
@@ -20,11 +18,7 @@ except ModuleNotFoundError:
 except ModuleNotFoundError:
 	print("Lolcat Is Not Installed")
 	os.system('python -m pip install lolcat')
-try:
-	import requests
-except ModuleNotFoundError:
-	print("Requests Is Not Installed")
-	os.system('python -m pip install requests')
+
 try:
 	from tables import table_ex
 except ModuleNotFoundError:
@@ -221,7 +215,7 @@ def eulapa():
 	if it == True:
 		print()
 	if linu == True:
-		print()
+		print() 
 	if it == False:
 		os.system('clear')
 		eluatxt()
@@ -318,26 +312,14 @@ def india():
 @calculator.command("clear")
 def clear():
 	os.system('clear')
-def down():
-	downloadUrl = 'https://raw.githubusercontent.com/T-Dynamos/Maths_Bot/main/setup.py'
-	req = requests.get(downloadUrl)
-	filename = req.url[downloadUrl.rfind('/')+1:]
-	with open(filename, 'wb') as f:
-		for chunk in req.iter_content(chunk_size=8192):
-			if chunk:
-				f.write(chunk)
-
 def update():
 	print(h1)
 	x=input("Do You want to update y/n ==> ")
 	if x=='y':
 		print()
-		os.remove('setup.py')
-		print("Downloading...")
-		down()
-		print()
 		print("Installing...")
 		print()
+		os.system('wget https://raw.githubusercontent.com/T-Dynamos/Maths_Bot/main/setup.py')
 		os.system('bash installer.sh')
 		print("Installation Successful")
 	else:
