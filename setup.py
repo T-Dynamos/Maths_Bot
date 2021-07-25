@@ -214,8 +214,11 @@ def eluatxt():
 	print("ignore this and you use this program in examination  it will not be our fault .")
 	print()
 def eulapa():	
-	it = os.path.isfile('hack.txt')
+	it = os.path.isfile('/data/data/com.termux/files/usr/etc/hack.txt')
+	linu = os.path.isfile('/etc/hack.txt')
 	if it == True:
+		print()
+	if linu == True:
 		print()
 	if it == False:
 		os.system('clear')
@@ -227,7 +230,7 @@ def eulapa():
 		print()
 		hj = input("==> ")
 		if hj == 'I accepted this bla bla':
-			f= open("hack.txt","w+")
+			os.system('touch $PREFIX/etc/hack.txt')
 			print()
 		elif hj == 'hack':
 			print()
