@@ -122,8 +122,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
+import getpass
+os1 = getpass.getuser()
 from riposte import Riposte
-math1 = (Fore.BLUE + Style.BRIGHT + "[" + Fore.RED + "math" + Fore.BLUE + "]> " + Fore.RESET + Fore.GREEN)
+math1 = (Fore.BLUE + Style.BRIGHT + "╔═[" + Fore.RED + "math" + Fore.BLUE + "][" +Fore.GREEN + os1+ Fore.BLUE+"]\n" + Fore.BLUE +  '╚═# ' + Fore.GREEN)
 
 calculator = Riposte(prompt=(math1))
 
@@ -132,6 +134,8 @@ import threading
 
 def heading(num,txt):
 	print(Fore.RESET + Fore.RED + "[" + Fore.GREEN + num + Fore.RED + "]" + Fore.CYAN + txt )
+#functions
+##########################
 @calculator.command("help")
 def help():
 	print()
@@ -149,10 +153,11 @@ def help():
 	print()
 	print("Extra Options")
 	print()
-	heading('1','restart   To restart')
+	heading('1','res       To restart')
 	heading('2','exit      To exit')
 	heading('3','banner    To print banner')
 	heading('4','main      To start main activity')
+	heading('5','memory    To show memory')
 	print(Fore.GREEN)
 	
 	print(h1 +"═════")
@@ -338,7 +343,11 @@ def r1():
 	print("Worng Option Idiot")
 	print(h1)
 	restart()
-@calculator.command("restart")
+@calculator.command("res")
+def res():
+	print()
+	print("Use Ctrl + D to restart")
+	print()
 def restart():
 	r=input(ins)
 	if r =='y':
@@ -511,7 +520,10 @@ def fraction_divide():
 	print("Final Answer = ", value1/value2)
 	print(h1)
 	restart()
+###############################
 @calculator.command("main")
+#main program starts here
+################################
 def main():
 	print(h1)
 	print("Choose Any Option")
@@ -925,5 +937,12 @@ def main():
 		else:
 			r1()
 	else:
-		r1()				
-main()         
+		r1()			
+##########################			
+main()
+if __name__ == "__main__":
+    try:
+        main()
+    except ValueError:
+    	print("Invaild Parameters")    
+    	r1()
