@@ -1,3 +1,5 @@
+#!/data/data/com.termux/files/usr/bin/python3
+#!/usr/bin/python3
 import sys
 import math
 import time
