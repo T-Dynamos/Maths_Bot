@@ -8,11 +8,9 @@ pip install lolcat
 cd $HOME
 rm -rf m_bot
 git clone https://github.com/T-Dynamos/Maths_Bot m_bot
-cd /data/data/com.termux/files/usr/bin
-wget https://raw.githubusercontent.com/T-Dynamos/termux-pro/main/mbot
-chmod +x *
-cd
-clear
+mv $HOME/m_bot/setup.py $PREFIX/bin/mbot
+chmod 777 $PREFIX/bin/mbot
+rm -rf $HOME/mbot
 echo -e Installing ...
 pip install colorama
 pip install requests
