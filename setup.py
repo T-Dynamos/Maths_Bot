@@ -1,3 +1,5 @@
+#!/data/data/com.termux/files/usr/bin/python3
+#!/usr/bin/python3
 import sys
 import math
 import time
@@ -319,7 +321,7 @@ def update():
 		print()
 		print("Installing...")
 		print()
-		os.system('wget https://raw.githubusercontent.com/T-Dynamos/Maths_Bot/main/setup.py')
+		os.system('wget https://raw.githubusercontent.com/T-Dynamos/Maths_Bot/main/installer.sh')
 		os.system('bash installer.sh')
 		print("Installation Successful")
 	else:
