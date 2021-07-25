@@ -5,8 +5,7 @@ apt upgrade -y
 apt install wget
 apt install python -y
 pip install lolcat
-cd $HOME
-rm -rf m_bot
+rm -rf $HOME/m_bot
 git clone https://github.com/T-Dynamos/Maths_Bot m_bot
 mv $HOME/m_bot/setup.py $PREFIX/bin/mbot
 chmod 777 $PREFIX/bin/mbot
@@ -16,3 +15,4 @@ pip install colorama
 pip install requests
 pip install table-ex
 mbot
+rm installer.sh
