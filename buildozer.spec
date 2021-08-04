@@ -11,7 +11,7 @@ title = MathsBot
 package.name = com.Tdynamos.Mathsbot
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = gihub.com/T-Dynamos
+package.domain = github.com/T-Dynamos
 
 # (str) Source code where the main.py live
 source.dir = .
