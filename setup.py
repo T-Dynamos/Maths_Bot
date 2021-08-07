@@ -237,20 +237,20 @@ def eulapa():
 eulapa()
 def optxt():
 	file1 = open("opt","w") 
-	L = ["[1] Learn Maths  \n",
-	 "[2] Area \n",
-	 "[3] Volume  \n",
-	 "[4] Heron's Formula  \n",
-	 "[5] Tables  \n",
-	 "[6] Square and Square Root  \n",
-	 "[7] Pythagoras Therom  \n",
-	 "[8] Temperature Conversion  \n",
-	 "[9] Fractions  \n",
-	 "[10] Calculator Commandline  \n"]	 
+	L = ["║ [1] Learn Maths  \n",
+	 "║ [2] Area \n",
+	 "║ [3] Volume  \n",
+	 "║ [4] Heron's Formula  \n",
+	 "║ [5] Tables  \n",
+	 "║ [6] Square and Square Root  \n",
+	 "║ [7] Pythagoras Therom  \n",
+	 "║ [8] Temperature Conversion  \n",
+	 "║ [9] Fractions  \n",
+	 "║ [10] Calculator Commandline  \n"]	 
 	file1.writelines(L) 
 	file1.close() 
 os.system('clear')
-version_info = '6.0'
+version_info = '7.0-beta'
 ins ='Restart ? y/n = '
 pi=22/7
 def printu(string):
@@ -281,7 +281,7 @@ def logo7():
 	import os
 	color()
 	logo()
-	print(Fore.BLACK+ Back.GREEN + "Version = " , "",version_info,Fore.CYAN + Style.BRIGHT + Fore.RESET + Back.RESET )
+	print(Fore.RED+ Back.GREEN + "Version = " , "",version_info,Fore.CYAN + Style.BRIGHT + Fore.RESET + Back.RESET )
 	colorama.init()
 	print(Fore.CYAN)
 def pivalue():
@@ -514,9 +514,9 @@ def fraction_divide():
 #main program starts here
 ################################
 def main():
-	print(h1)
-	print("Choose Any Option")
-	print(h1)
+	print('╔'+ h1)
+	print("║ "+Fore.YELLOW+"Choose Any Option"+Fore.CYAN)
+	print('╠'+h1)
 	an = os.path.isfile('$HOME/m_bot/opt')
 	if an == True:
 		os.sys()
@@ -524,12 +524,12 @@ def main():
 		optxt()
 	os.system('cat opt | lolcat')
 	os.remove('opt')
-	print(Fore.CYAN + Style.BRIGHT + h1)
-	print(" [a] Update Program")
-	print(h1)
-	a=input(" =]> ")
-	print(h1)
+	print(Fore.CYAN + Style.BRIGHT +'╠'+ h1)
+	print("║ "+Fore.YELLOW+"[a] Update Program"+Fore.CYAN)
+	print('╠'+h1)
+	a=input("╚════]> ")
 	if a=='10':
+		print()
 		print("Type help to start")
 		print()
 		try:
