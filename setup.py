@@ -372,7 +372,8 @@ def update():
 		          sys.stdout.write(Fore.GREEN + '\rUpdating ' + Fore.YELLOW+ c)
 		          sys.stdout.flush()
 		          time.sleep(0.1)
-		      sys.stdout.write('\rDone!     ')
+		      sys.stdout.write('')
+		      exit()
 		t = threading.Thread(target=animate)
 		t.start()
 		
