@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/python3
 #!/usr/bin/python3
-version = '7.0 - Release'
+version = '7.5'
 R = '\033[31m' # red
 G = '\033[32m' # green
 C = '\033[36m' # cyan
