@@ -1,5 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/python3
 #!/usr/bin/python3
+version = '7.0 - Release '
 R = '\033[31m' # red
 G = '\033[32m' # green
 C = '\033[36m' # cyan
@@ -146,7 +147,7 @@ THE SOFTWARE.
 """
 info = ''
 result = ''
-version = '7.0-Stable'
+
 import getpass
 
 os1 = getpass.getuser()
