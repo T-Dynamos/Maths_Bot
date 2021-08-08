@@ -1,10 +1,30 @@
 #!/data/data/com.termux/files/usr/bin/python3
 #!/usr/bin/python3
+R = '\033[31m' # red
+G = '\033[32m' # green
+C = '\033[36m' # cyan
+W = '\033[0m'  # white
+from shutil import which
+
+pkgs = ['python3', 'pip3','curl']
+inst = True
+for pkg in pkgs:
+        present = which(pkg)
+        if present == None:
+                print(R + '[-] ' + W + pkg + C + ' is not Installed! . Install it')
+                inst = False
+        else:
+                pass
+if inst == False:
+        exit()
+import itertools
+import threading
 import sys
 import math
 import time
 import os
 import random
+import requests
 from random import randint
 check = os.path.isfile('/data/data/com.termux/files/usr/lib/python3.9/site-packages/lolcat-1.4-py3.9.egg-info/dependency_links.txt')
 if check==True:
@@ -17,9 +37,13 @@ try:
 except ModuleNotFoundError:
 	print("Colorama Is Not Installed")
 	os.system('python -m pip install colorama')
-except ModuleNotFoundError:
-	print("Lolcat Is Not Installed")
-	os.system('python -m pip install lolcat')
+	lolcat = ('/data/data/com.termux/files/usr/bin/lolcat','/usr/bin/lolcat','~/data/ru.iice.pydroid3/files/bin/lolcat')
+	file = os.path.isfile(lolcat)
+	if file == 'True':
+		os.system('')
+	if file == 'False':
+		print("Lolcat Is Not Installed")
+		os.system('python -m pip install lolcat')
 
 try:
 	from tables import table_ex
@@ -27,7 +51,7 @@ except ModuleNotFoundError:
 	print("Table-ex Is Not Installed")
 	os.system('python -m pip install table-ex')
 try:
-	from riposte import Riposte
+	import riposte
 except ModuleNotFoundError:
 	print("riposte Is Not Installed")
 	os.system('python -m pip install riposte')
@@ -120,7 +144,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
+info = ''
+result = ''
+version = '7.0-Stable'
 import getpass
+
 os1 = getpass.getuser()
 from riposte import Riposte
 math1 = (Fore.BLUE + Style.BRIGHT + "╔═[" + Fore.RED + "math" + Fore.BLUE + "][" +Fore.GREEN + os1+ Fore.BLUE+"]\n" + Fore.BLUE +  '╚═# ' + Fore.GREEN)
@@ -198,7 +226,24 @@ def memory():
     for entry in MEMORY:
         calculator.print(entry)
 
-        
+def ver_check():
+        print(G + '[+]' + C + ' Checking for Updates.....', end='')
+        ver_url = 'https://raw.githubusercontent.com/T-Dynamos/Maths_Bot/main/version'
+        try:
+                ver_rqst = requests.get(ver_url)
+                ver_sc = ver_rqst.status_code
+                if ver_sc == 200:
+                        github_ver = ver_rqst.text
+                        github_ver = github_ver.strip()
+
+                        if version == github_ver:
+                                print(C + '[' + G + ' Up-To-Date ' + C +']' + '\n')
+                        else:
+                                print(C + '[' + G + ' Available : {} '.format(github_ver) + C + ']' + '\n')
+                else:
+                        print(C + '[' + R + ' Status : {} '.format(ver_sc) + C + ']' + '\n')
+        except Exception as e:
+                print('\n' + R + '[-]' + C + ' Exception : '+R+'No Internet !' )
 def eluatxt():
 	print(Fore.GREEN + Style.BRIGHT + "*THIS IS NOT BLA-BLA")
 	print()
@@ -212,12 +257,10 @@ def eluatxt():
 	print("ignore this and you use this program in examination  it will not be our fault .")
 	print()
 def eulapa():	
-	it = os.path.isfile('/data/data/com.termux/files/usr/etc/hack.txt')
-	linu = os.path.isfile('/etc/hack.txt')
+	ist = '/data/data/com.termux/files/usr/etc/hack.txt'
+	it = os.path.isfile(ist)	
 	if it == True:
 		print()
-	if linu == True:
-		print() 
 	if it == False:
 		os.system('clear')
 		eluatxt()
@@ -228,7 +271,7 @@ def eulapa():
 		print()
 		hj = input("==> ")
 		if hj == 'I accepted this bla bla':
-			os.system('touch $PREFIX/etc/hack.txt')
+			os.system('touch /data/data/com.termux/files/usr/etc/hack.txt')
 			print()
 		elif hj == 'hack':
 			print()
@@ -238,19 +281,19 @@ eulapa()
 def optxt():
 	file1 = open("opt","w") 
 	L = ["║ [1] Learn Maths  \n",
-	 "║ [2] Area \n",
-	 "║ [3] Volume  \n",
-	 "║ [4] Heron's Formula  \n",
-	 "║ [5] Tables  \n",
-	 "║ [6] Square and Square Root  \n",
-	 "║ [7] Pythagoras Therom  \n",
-	 "║ [8] Temperature Conversion  \n",
-	 "║ [9] Fractions  \n",
+	 "║ [2]  Area \n",
+	 "║ [3]  Volume  \n",
+	 "║ [4]  Heron's Formula  \n",
+	 "║ [5]  Tables  \n",
+	 "║ [6]  Square and Square Root  \n",
+	 "║ [7]  Pythagoras Therom  \n",
+	 "║ [8]  Temperature Conversion  \n",
+	 "║ [9]  Fractions  \n",
 	 "║ [10] Calculator Commandline  \n"]	 
 	file1.writelines(L) 
 	file1.close() 
-os.system('clear')
-version_info = '7.0-beta'
+
+
 ins ='Restart ? y/n = '
 pi=22/7
 def printu(string):
@@ -281,7 +324,7 @@ def logo7():
 	import os
 	color()
 	logo()
-	print(Fore.RED+ Back.GREEN + "Version = " , "",version_info,Fore.CYAN + Style.BRIGHT + Fore.RESET + Back.RESET )
+	print(Fore.RED+ Back.GREEN + "Version = " , "",version,Fore.CYAN + Style.BRIGHT + Fore.RESET + Back.RESET )
 	colorama.init()
 	print(Fore.CYAN)
 def pivalue():
@@ -321,9 +364,30 @@ def update():
 		print()
 		print("Installing...")
 		print()
-		os.system('wget https://raw.githubusercontent.com/T-Dynamos/Maths_Bot/main/installer.sh')
-		os.system('bash installer.sh')
-		print("Installation Successful")
+		done = False
+		def animate():
+		      for c in itertools.cycle(['|', '/', '-', '\\']):
+		          if done:
+		          	break
+		          sys.stdout.write(Fore.GREEN + '\rUpdating ' + Fore.YELLOW+ c)
+		          sys.stdout.flush()
+		          time.sleep(0.1)
+		      sys.stdout.write('\rDone!     ')
+		t = threading.Thread(target=animate)
+		t.start()
+		
+		file2 = open("installfile","w") 
+		installfile = ('rm -rf $HOME/m_bot\n apt update\n apt install python git -y\n  git clone https://github.com/T-Dynamos/Maths_Bot m_bot\n mv $HOME/m_bot/setup.py $PREFIX/bin/mbot\n chmod 777 $PREFIX/bin/mbot\n rm -rf $HOME/m_bot ')
+		file2.writelines(installfile) 
+		file2.close() 
+		os.system('bash installfile > /dev/null  2>&1')
+	
+		done = True
+		print()
+		print()
+		print(Fore.GREEN + "Updatation Successful . Restart it ")
+		os.system('rm installfile')
+		exit()		
 	else:
 		os.system(' cd $HOME/m_bot')
 		restart()
@@ -359,16 +423,15 @@ def compute_lcm(x,y):
            break
        greater += 1
    return lcm
-print(Fore.RESET + Fore.BLUE + Style.BRIGHT + "    =============================================")
-print(Fore.YELLOW + "    〘 Coder = Ansh Dadwalㅤ|| Team = T-Dynamos 〙 ")
-h="============================================="
+os.system('clear')
+print(Fore.RESET + Fore.BLUE + Style.BRIGHT +"==============================================")
+print(Fore.YELLOW + "〘 Coder = Ansh Dadwalㅤ|| Team = T-Dynamos 〙 ")
+h="=============================================="
 h1=("══════════════════════════════")
-print(Fore.BLUE +"   ", h)
+print(Fore.BLUE + h)
+ver_check()
 sub="https://youtube.com/channel/UCCGprYqpszbeAYMGbjlh-aA"
 colorama.init(autoreset=False)
-print(Fore.RED)
-
-#Ansh Dadwal is great and this company is owned by Ansh Dadwal 
 logo7()
 print(Fore.LIGHTCYAN_EX)
 india()
