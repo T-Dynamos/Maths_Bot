@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/python3
 #!/usr/bin/python3
-version = '7.5'
+version = '7.6'
 R = '\033[31m' # red
 G = '\033[32m' # green
 C = '\033[36m' # cyan
@@ -281,7 +281,7 @@ def eulapa():
 eulapa()
 def optxt():
 	file1 = open("opt","w") 
-	L = ["║ [1] Learn Maths  \n",
+	L = ["║ [1]  Learn Maths  \n",
 	 "║ [2]  Area \n",
 	 "║ [3]  Volume  \n",
 	 "║ [4]  Heron's Formula  \n",
