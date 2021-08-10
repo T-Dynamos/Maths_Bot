@@ -12,7 +12,7 @@
 Maths Bot with many different types of features like auto-updation and many other formulas for all life
 # Disclamer
 Don't Use ot Your Online Exam !! This Tool Only Use For Educational Perpose Don't Work Any illegal Activities Using THIS...
-
+GitHub Pages = [https://t-dynamos.github.io/Maths_Bot/](https://t-dynamos.github.io/Maths_Bot/)
 ## Installation
 * TERMUX
 First Time 
