@@ -1,37 +1,48 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/T-Dynamos/Maths_Bot/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+![logo](https://github.com/T-Dynamos/Maths_Bot/raw/main/20210810_085801.png)  <br />
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<p align="center">
+  <img src="https://img.shields.io/badge/Maintained%3F-Yes-green?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/T-Dynamos/termux-pro?style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/T-Dynamos/termux-pro?color=violet&style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/T-Dynamos/termux-pro?color=teal&style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/T-Dynamos/termux-pro?style=for-the-badge">
+</p>
 
-### Markdown
+Maths Bot with many different types of features like auto-updation and many other formulas for all life
+# Disclamer
+Don't Use ot Your Online Exam !! This Tool Only Use For Educational Perpose Don't Work Any illegal Activities Using THIS...
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+## Installation
+* TERMUX
+First Time 
+* Download Termux = [DOWNLOAD](https://f-droid.org/repo/com.termux_112.apk)
+# INSTALL 
+(Single Command)
+```
+source <(curl -fsSL https://kutt.it/cvhlyD)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Second Time = 
+```
+mbot
+```
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/T-Dynamos/Maths_Bot/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+* WINDOWS
+* Download Winget = [Here](https://www.microsoft.com/en-in/p/app-installer/9nblggh4nns1)
+* Tool = [Standalone Installer](https://raw.githubusercontent.com/T-Dynamos/Maths_Bot/main/wininstall.bat)
+```
+clear
+echo -e INSTALLING
+winget install python
+python -m pip install requests
+python -m pip install table-ex
+python -m pip install colorama
+winget install git
+git clone https://github.com/T-Dynamos/Maths_Bot
+python setup.py
+```
+## Author
+Written and maintained by [T-Dynamos](https://github.com/T-Dynamos)
+## License
+Project license can be found [here](https://github.com/T-Dynamos/Maths_Bot/blob/master/LICENSE)
