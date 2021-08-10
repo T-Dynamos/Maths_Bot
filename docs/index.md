@@ -26,7 +26,7 @@ Don't Use ot Your Online Exam !! This Tool Only Use For Educational Perpose Don'
 
 First Time 
 
-* Download Termux = [DOWNLOAD](https://f-droid.org/repo/com.termux_112.apk)
+* Download Termux = [DOWNLOAD](https://f-droid.org/repo/com.termux_117.apk)
 
 # INSTALL 
 
