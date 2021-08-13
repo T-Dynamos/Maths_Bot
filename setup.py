@@ -7,7 +7,7 @@ C = '\033[36m' # cyan
 W = '\033[0m'  # white
 from shutil import which
 
-pkgs = ['python3', 'pip3','curl']
+pkgs = ['python3','curl']
 inst = True
 for pkg in pkgs:
         present = which(pkg)
