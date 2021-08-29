@@ -1,6 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/python3
 #!/usr/bin/python3
-version = '7.6'
+#By T-Dynamos | Ansh Dadwad
+version = '8.0'
 R = '\033[31m' # red
 G = '\033[32m' # green
 C = '\033[36m' # cyan
@@ -27,6 +28,7 @@ import os
 import random
 import requests
 from random import randint
+os.system('rm -rf $HOME/.mbotrc')
 check = os.path.isfile('/data/data/com.termux/files/usr/lib/python3.9/site-packages/lolcat-1.4-py3.9.egg-info/dependency_links.txt')
 if check==True:
 	os.system('')
@@ -106,22 +108,78 @@ logo6 = """
 ║║║║║╠╣║║║║╔╗╠══║
 ╚╩═╩╩╝╚╝╚╝╚╝╚╩══╝
 """
-
-def logo():
+def color():
+	cyan = (Fore.CYAN)
+	yellow = (Fore.YELLOW)
+	green = (Fore.GREEN)
+	blue = (Fore.BLUE)
+	red = (Fore.RED)
+	pink = (Fore.MAGENTA)
+	color = random.randint(1 , 6)
+	if color == 1:
+		col = (cyan)
+	if color == 2:
+		col = (yellow)
+	if color == 3:
+		col = (green)
+	if color == 4:
+		col = (blue)
+	if color == 5:
+		col = (red)
+	if color == 6:
+		col = (pink)
+	print(col)
+def file_make(namefile):
+	file1 = open(name, "w") 
+	file1.close() 
+def logofile():
 	ran = random.randint(1,6)
+	filecheck = os.path.isdir(HOME + '/.mbotrc')
+	if filecheck == True:
+		return logo()
+	if filecheck == False:
+		pass
+	os.system('mkdir $HOME/.mbotrc > /dev/null 2>&1')
 	if ran == 1:
-		print(logo1)
+		os.system(" touch $HOME/.mbotrc/logo1 ")
 	if ran == 2:
-		print(logo2)
+		os.system(" touch $HOME/.mbotrc/logo2 ")
 	if ran == 3:
-		print(logo3)
+		os.system(" touch $HOME/.mbotrc/logo3 ")
 	if ran == 4:
-		print(logo4)
+		os.system(" touch $HOME/.mbotrc/logo4 ")
 	if ran == 5:
-		print(logo5)
+		os.system(" touch $HOME/.mbotrc/logo5 ")
 	if ran == 6:
-		print(logo6)
-	
+		os.system(" touch $HOME/.mbotrc/logo6 ")
+		
+HOME= os.path.expanduser('~')
+logofile()
+def logo():
+	logo10 = os.path.isfile(HOME + '/.mbotrc/logo1')
+	logo20 = os.path.isfile(HOME + '/.mbotrc/logo2')
+	logo30 = os.path.isfile(HOME + '/.mbotrc/logo3')
+	logo40 = os.path.isfile(HOME + '/.mbotrc/logo4')
+	logo50 = os.path.isfile(HOME + '/.mbotrc/logo5')
+	logo60 = os.path.isfile(HOME + '/.mbotrc/logo6')	
+	if logo10 == True:
+		color()
+		print(logo1)
+	if logo20 == True:
+		color()
+		print(logo2)		
+	if logo30 == True:
+		color()
+		print(logo3)			
+	if logo40 == True:
+		color()
+		print(logo4)
+	if logo50 == True:
+		color()
+		print(logo5)
+	if logo60 == True:
+		color()
+		print(logo6)	
 lic = """
 The MIT License (MIT)
 
@@ -300,27 +358,7 @@ pi=22/7
 def printu(string):
 	print(under ," " , string , " ",line)
 	print(Fore.CYAN + Style.BRIGHT)
-def color():
-	cyan = (Fore.CYAN)
-	yellow = (Fore.YELLOW)
-	green = (Fore.GREEN)
-	blue = (Fore.BLUE)
-	red = (Fore.RED)
-	pink = (Fore.MAGENTA)
-	color = random.randint(1 , 6)
-	if color == 1:
-		col = (cyan)
-	if color == 2:
-		col = (yellow)
-	if color == 3:
-		col = (green)
-	if color == 4:
-		col = (blue)
-	if color == 5:
-		col = (red)
-	if color == 6:
-		col = (pink)
-	print(col)
+
 def logo7(): 
 	import os
 	color()
@@ -993,7 +1031,6 @@ def main():
 	else:
 		r1()			
 ##########################			
-main()
 if __name__ == "__main__":
     try:
         main()
