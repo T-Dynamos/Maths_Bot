@@ -1,4 +1,4 @@
-#!$PREFIX/bin/python3
+#!/dat/data/com.termux/files/usr/bin/python3
 #!/usr/bin/python3
 
 # -*- coding: utf-8 -*-
