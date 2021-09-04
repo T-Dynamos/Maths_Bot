@@ -447,7 +447,7 @@ def update():
 		restart()
 def r1():
 	print(h1)
-	print("Worng Option Idiot")
+	print("Wrong Option Idiot")
 	print(h1)
 	restart()
 @calculator.command("res")
