@@ -1,5 +1,27 @@
-#!/data/data/com.termux/files/usr/bin/python3
 #!/usr/bin/python3
+
+
+# -*- coding: utf-8 -*-
+#
+#  untitled.py
+#  
+#  Copyright 2021 TDynamos <tdynamos@linux>
+#  
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#  
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#  
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+#  
 #By T-Dynamos | Ansh Dadwad
 version = '8.0'
 R = '\033[31m' # red
@@ -8,7 +30,7 @@ C = '\033[36m' # cyan
 W = '\033[0m'  # white
 from shutil import which
 
-pkgs = ['python3','curl']
+pkgs = ['python3','curl','lolcat']
 inst = True
 for pkg in pkgs:
         present = which(pkg)
@@ -19,6 +41,7 @@ for pkg in pkgs:
                 pass
 if inst == False:
         exit()
+
 import itertools
 import threading
 import sys
@@ -29,24 +52,12 @@ import random
 import requests
 from random import randint
 os.system('rm -rf $HOME/.mbotrc')
-check = os.path.isfile('/data/data/com.termux/files/usr/lib/python3.9/site-packages/lolcat-1.4-py3.9.egg-info/dependency_links.txt')
-if check==True:
-	os.system('')
-if check==False:
-	print('Lolcat is not installed')
-	os.system('pip install lolcat')
+
 try:
 	import colorama
 except ModuleNotFoundError:
 	print("Colorama Is Not Installed")
 	os.system('python -m pip install colorama')
-	lolcat = ('/data/data/com.termux/files/usr/bin/lolcat','/usr/bin/lolcat','~/data/ru.iice.pydroid3/files/bin/lolcat')
-	file = os.path.isfile(lolcat)
-	if file == 'True':
-		os.system('')
-	if file == 'False':
-		print("Lolcat Is Not Installed")
-		os.system('python -m pip install lolcat')
 
 try:
 	from tables import table_ex
@@ -58,6 +69,11 @@ try:
 except ModuleNotFoundError:
 	print("riposte Is Not Installed")
 	os.system('python -m pip install riposte')
+try:
+	import requests
+except ModuleNotFoundError:
+	print("requests Is Not Installed")
+	os.system('python -m pip install requests')
 from colorama import Fore, Back ,Style
 colorama.init()
 under = '\033[4m'
@@ -179,29 +195,24 @@ def logo():
 		print(logo5)
 	if logo60 == True:
 		color()
-		print(logo6)	
+		print(logo6)
+		
 lic = """
-The MIT License (MIT)
-
-Copyright (c) 2021 @T-Dynamos
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+  Copyright 2021 TDynamos <tdynamos@linux>
+  
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,#  MA 02110-1301, USA.
+  
 """
 info = ''
 result = ''
@@ -316,39 +327,42 @@ def eluatxt():
 	print("ignore this and you use this program in examination  it will not be our fault .")
 	print()
 def eulapa():	
-	ist = '/data/data/com.termux/files/usr/etc/hack.txt'
+	ist = (HOME + '/.mbotcfg/hack.txt')
 	it = os.path.isfile(ist)	
 	if it == True:
-		print()
+		pass
 	if it == False:
 		os.system('clear')
 		eluatxt()
 		print()
-		print("Write Down This to continue ")
+		print(Fore.BLUE+"Write Down This to continue ")
 		print()
 		print(Fore.RED + "I accepted this bla bla")
-		print()
+		print(Fore.GREEN)
 		hj = input("==> ")
 		if hj == 'I accepted this bla bla':
-			os.system('touch /data/data/com.termux/files/usr/etc/hack.txt')
+			os.system('mkdir ' +HOME +'/.mbotcfg/  > /dev/null')
+			os.system('touch ' +HOME +'/.mbotcfg/hack.txt')
 			print()
 		elif hj == 'hack':
-			print()
+			pass
 		else:
 			return eulapa()
 eulapa()
 def optxt():
 	file1 = open("opt","w") 
-	L = ["║ [1]  Learn Maths  \n",
-	 "║ [2]  Area \n",
-	 "║ [3]  Volume  \n",
-	 "║ [4]  Heron's Formula  \n",
-	 "║ [5]  Tables  \n",
-	 "║ [6]  Square and Square Root  \n",
-	 "║ [7]  Pythagoras Therom  \n",
-	 "║ [8]  Temperature Conversion  \n",
-	 "║ [9]  Fractions  \n",
-	 "║ [10] Calculator Commandline  \n"]	 
+	L = [
+	 "║  [1] Learn Maths  \n",
+	 "║  [2] Area \n",
+	 "║  [3] Volume  \n",
+	 "║  [4] Heron's Formula  \n",
+	 "║  [5] Tables  \n",
+	 "║  [6] Square and Square Root  \n",
+	 "║  [7] Pythagoras Therom  \n",
+	 "║  [8] Temperature Conversion  \n",
+	 "║  [9] Fractions  \n",
+	 "║  [0] Calculator Commandline  \n"
+	 ]	 
 	file1.writelines(L) 
 	file1.close() 
 
@@ -513,7 +527,7 @@ def fraction_add():
 	ultimate=value1+value2
 	print(under,value1,"+",value2,line)
 	col =(Fore.CYAN + Style.BRIGHT)
-	print(col," ",lcm)
+	print(col,"   ",lcm)
 	print(h1)	
 	print(under,ultimate,line)
 	print(col,"",lcm)
@@ -631,7 +645,7 @@ def main():
 	print("║ "+Fore.YELLOW+"[a] Update Program"+Fore.CYAN)
 	print('╠'+h1)
 	a=input("╚════]> ")
-	if a=='10':
+	if a=='0' :
 		print()
 		print("Type help to start")
 		print()
@@ -1030,10 +1044,7 @@ def main():
 			r1()
 	else:
 		r1()			
-##########################			
-if __name__ == "__main__":
-    try:
-        main()
-    except ValueError:
-    	print("Invaild Parameters")    
-    	r1()
+##########################
+
+if __name__ == '__main__':
+	main()
