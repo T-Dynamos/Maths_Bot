@@ -1,7 +1,6 @@
 #!$PREFIX/bin/python3
 #!/usr/bin/python3
 
-
 # -*- coding: utf-8 -*-
 #
 #  untitled.py
@@ -24,7 +23,7 @@
 #  MA 02110-1301, USA.
 #  
 #By T-Dynamos | Ansh Dadwad
-version = '8.0'
+version = '9.0'
 R = '\033[31m' # red
 G = '\033[32m' # green
 C = '\033[36m' # cyan
